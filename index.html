@@ -1,0 +1,964 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1c1a3f">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Caly · Bravo Fit">
+<meta name="format-detection" content="telephone=no">
+<title>Rééquilibrage alimentaire 9 mois · Caly | Bravo Fit Studio</title>
+<style>
+:root{--plum:#1c1a3f;--wine:#5b2a86;--rose:#a8508f;--blush:#efe9f8;--peach:#dccdf2;--gold:#d1a74e;--gold-soft:#f6eedd;--sage:#7f9c83;--sage-soft:#eaf2ea;--cream:#fbf9fe;--white:#fff;--ink:#1a1830;--muted:#6c6684;--line:#e3dbf0;--shadow:0 14px 34px rgba(28,26,63,.10)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:#eee8f7;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6}
+.app{max-width:1000px;margin:auto;background:var(--cream);min-height:100vh;overflow:hidden}
+.hero{padding:54px 7% 46px;color:#fff;position:relative;overflow:hidden;background:radial-gradient(circle at 88% 8%,rgba(220,205,242,.6),transparent 32%),radial-gradient(circle at 5% 95%,rgba(201,165,90,.5),transparent 38%),linear-gradient(140deg,#5b2a86,#33245e 55%,#1a1830)}
+.hero:before{content:"";position:absolute;width:520px;height:520px;right:-190px;top:-260px;border-radius:50%;border:1px solid rgba(255,255,255,.18);box-shadow:0 0 0 70px rgba(255,255,255,.03)}
+.hero>*{position:relative;z-index:1}
+.brand{display:flex;align-items:center;gap:16px;font-weight:800;letter-spacing:5px;font-size:22px}
+.logo{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;letter-spacing:0;font-size:19px;border:2px solid rgba(255,255,255,.7);background:radial-gradient(circle at 32% 25%,#fff,#e2d6f4 32%,#d1a74e 80%);color:#33245e;box-shadow:0 8px 20px rgba(0,0,0,.2)}
+.sub{margin:10px 0 40px 78px;color:#e2d6f4;font-size:12px;letter-spacing:5px}
+.pill{display:inline-block;border:1px solid rgba(255,255,255,.4);border-radius:99px;padding:9px 18px;font-size:13px;letter-spacing:2px}
+.hero h1{font-family:Georgia,serif;font-weight:400;font-size:40px;line-height:1.12;margin:24px 0 14px;max-width:720px}
+.hero h1 em{font-style:normal;color:var(--peach)}
+.hero p{font-size:17px;max-width:720px;margin:0;color:#f5f1fb}
+.affhero{margin-top:24px;max-width:720px;border:1px solid rgba(220,205,242,.5);background:rgba(255,255,255,.08);border-radius:18px;padding:16px 18px}
+.affhero small{display:block;letter-spacing:3px;font-size:11px;font-weight:800;color:var(--peach)}
+.affhero b{display:block;font-family:Georgia,serif;font-weight:400;font-size:21px;line-height:1.35;margin-top:6px}
+.nav{display:flex;gap:9px;overflow-x:auto;margin-top:28px;padding-bottom:4px;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{flex:0 0 auto;text-decoration:none;color:#fff;border:1px solid rgba(255,255,255,.5);background:rgba(255,255,255,.1);border-radius:99px;padding:10px 16px;font-size:14px;font-weight:700}
+.content{padding:44px 6%}
+section.block{margin-top:52px;scroll-margin-top:10px}
+section.block:first-child{margin-top:0}
+.kicker{font-size:12px;letter-spacing:3px;font-weight:800;color:var(--rose);text-transform:uppercase}
+.title{font-family:Georgia,serif;font-weight:400;font-size:33px;line-height:1.15;margin:6px 0 10px}
+.rule{height:4px;width:120px;border-radius:4px;background:linear-gradient(90deg,var(--wine) 0 55%,var(--gold) 55%);margin:0 0 26px}
+.lead{font-size:16px;color:var(--muted);margin:0 0 20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:var(--shadow)}
+.card h3{margin:0 0 8px;font-size:17px;color:var(--wine)}
+.card p{margin:0;font-size:15px}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.profile{border-left:8px solid var(--rose)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.chip{padding:7px 14px;border-radius:99px;background:var(--blush);color:var(--wine);font-weight:700;font-size:14px}
+.chip.gold{background:var(--gold-soft);color:#4e3478}
+.stat{background:var(--cream);border:1px solid var(--line);border-radius:16px;padding:14px}
+.stat b{display:block;font-size:23px;color:var(--plum)}
+.stat span{font-size:11px;letter-spacing:.7px;font-weight:800;color:var(--muted);text-transform:uppercase}
+.levels{display:grid;gap:14px;grid-template-columns:repeat(3,1fr)}
+.level{border-radius:22px;padding:22px;color:#fff;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.level:after{content:"";position:absolute;width:140px;height:140px;border-radius:50%;right:-50px;top:-50px;background:rgba(255,255,255,.12)}
+.level small{letter-spacing:2px;font-weight:800;font-size:11px;opacity:.9}
+.level b{display:block;font-family:Georgia,serif;font-weight:400;font-size:34px;margin:4px 0}
+.level p{margin:0;font-size:14px;opacity:.95}
+.lv1{background:linear-gradient(140deg,#8a9f8c,#5f7b64)}
+.lv2{background:linear-gradient(140deg,#d1a74e,#b97d17)}
+.lv3{background:linear-gradient(140deg,#9a6414,#1c1a3f)}
+.formula{background:var(--gold-soft);border-left:6px solid var(--gold);border-radius:18px;padding:20px;margin-top:18px}
+.formula h3{margin:0 0 6px;color:#4e3478;font-size:17px}
+.formula p{margin:5px 0;font-size:15px}
+.callout{background:var(--sage-soft);border-left:6px solid var(--sage);border-radius:18px;padding:20px;margin-top:18px}
+.callout h3{margin:0 0 6px;color:#48664d;font-size:17px}
+.callout p{margin:0;font-size:15px}
+.sim{margin-top:18px}
+.sim .row{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.seg{display:flex;background:var(--blush);border-radius:99px;padding:4px;gap:4px;flex-wrap:wrap}
+.seg button{border:0;background:transparent;padding:10px 14px;border-radius:99px;font-weight:800;color:var(--wine);font-size:14px;cursor:pointer}
+.seg button.on{background:var(--wine);color:#fff;box-shadow:0 4px 12px rgba(91,42,134,.3)}
+.bars{margin-top:18px;display:grid;gap:12px}
+.bar label{display:flex;justify-content:space-between;font-size:14px;font-weight:700}
+.track{height:12px;background:#f0eaf8;border-radius:9px;overflow:hidden;margin-top:5px}
+.fill{height:100%;border-radius:9px;transition:width .5s ease}
+.big{font-family:Georgia,serif;font-size:40px;color:var(--plum)}
+.timeline{position:relative;margin-top:10px;padding-left:26px}
+.timeline:before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:3px;border-radius:3px;background:linear-gradient(var(--sage),var(--rose),var(--wine),var(--gold))}
+.step{position:relative;margin-bottom:14px}
+.step:before{content:"";position:absolute;left:-24px;top:20px;width:13px;height:13px;border-radius:50%;background:#fff;border:3px solid var(--rose)}
+.step .card{padding:16px 18px}
+.step h4{margin:0;font-size:16px;color:var(--plum)}
+.step .meta{font-size:13px;font-weight:800;color:var(--rose);letter-spacing:.5px}
+.step p{margin:4px 0 0;font-size:14px}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:18px;background:#fff;margin-top:16px}
+table{width:100%;border-collapse:collapse;min-width:520px}
+th{background:var(--plum);color:#fff;text-align:left;padding:12px;font-size:14px}
+td{padding:12px;border-bottom:1px solid var(--line);font-size:14px;vertical-align:top}
+tr:nth-child(even) td{background:#faf8fd}
+tr:last-child td{border:0}
+.reset{background:linear-gradient(140deg,#f5f1fb,#f6eedd);border:1px solid var(--line);border-radius:26px;padding:26px}
+.days{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 10px;scrollbar-width:none}
+.days::-webkit-scrollbar{display:none}
+.dbtn{flex:0 0 auto;width:56px;height:64px;border-radius:16px;border:1px solid var(--line);background:#fff;cursor:pointer;font-weight:800;color:var(--wine);display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:18px;position:relative}
+.dbtn small{font-size:10px;letter-spacing:1px;color:var(--muted)}
+.dbtn.on{background:var(--wine);color:#fff;border-color:var(--wine)}
+.dbtn.on small{color:#e2d6f4}
+.dbtn.done:after{content:"✓";position:absolute;top:-6px;right:-6px;width:20px;height:20px;border-radius:50%;background:var(--sage);color:#fff;font-size:12px;display:grid;place-items:center}
+.meal{display:grid;grid-template-columns:62px 1fr;gap:12px;padding:13px 0;border-bottom:1px dashed #d8cbec}
+.meal:last-child{border:0}
+.meal .h{font-weight:800;color:var(--rose);font-size:14px}
+.meal b{display:block;color:var(--plum);font-size:15px}
+.meal span{font-size:14px;color:var(--ink)}
+.dayhead{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap;margin-bottom:6px}
+.dayhead h3{font-family:Georgia,serif;font-weight:400;font-size:24px;margin:0;color:var(--plum)}
+.tag{display:inline-block;background:var(--gold-soft);color:#4e3478;border-radius:99px;padding:5px 12px;font-size:12px;font-weight:800}
+.habit{margin-top:12px;background:#fff;border-radius:14px;padding:12px 14px;font-size:14px;border:1px solid var(--line)}
+.habit b{color:var(--wine)}
+.check{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:12px;cursor:pointer;font-size:15px;user-select:none;-webkit-user-select:none}
+.check input{appearance:none;-webkit-appearance:none;width:22px;height:22px;border-radius:7px;border:2px solid var(--rose);flex:0 0 auto;display:grid;place-items:center;margin:0;background:#fff}
+.check input:checked{background:var(--wine);border-color:var(--wine)}
+.check input:checked:after{content:"✓";color:#fff;font-size:13px;font-weight:800}
+.check.done span{text-decoration:line-through;color:var(--muted)}
+.water{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.glass{width:44px;height:54px;border-radius:6px 6px 14px 14px;border:2px solid #b9c9d6;background:#fff;cursor:pointer;position:relative;overflow:hidden}
+.glass:after{content:"";position:absolute;left:0;right:0;bottom:0;height:0;background:linear-gradient(#bfe0ee,#7fb6d1);transition:height .35s}
+.glass.full:after{height:80%}
+.tabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:6px;margin-bottom:14px}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:0 0 auto;border:1px solid var(--line);background:#fff;color:var(--wine);border-radius:99px;padding:10px 16px;font-weight:800;font-size:14px;cursor:pointer}
+.tabs button.on{background:var(--plum);color:#fff;border-color:var(--plum)}
+.panel{display:none}.panel.on{display:block;animation:fade .35s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.scale{display:grid;gap:8px}
+.food{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px 12px}
+.food .n{flex:1;font-weight:700;font-size:15px}
+.food .v{font-size:13px;color:var(--muted);min-width:78px;text-align:right}
+.dot{width:12px;height:12px;border-radius:50%;flex:0 0 auto}
+.g{background:#7f9c83}.o{background:#d1a74e}.r{background:#c9596e}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--muted);margin-bottom:12px}
+.legend span{display:flex;align-items:center;gap:6px}
+.flip{perspective:900px;cursor:pointer;min-height:170px}
+.flip .in{position:relative;width:100%;height:100%;min-height:170px;transition:transform .6s;transform-style:preserve-3d;-webkit-transform-style:preserve-3d}
+.fx{position:absolute;opacity:0;pointer-events:none}.flip{display:block}.flip .fx:checked+.in,.flip.on .in{transform:rotateY(180deg)}
+.flip .f,.flip .b{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:20px;padding:18px;box-shadow:var(--shadow)}
+.flip .f{background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between}
+.flip .f b{font-family:Georgia,serif;font-weight:400;font-size:22px;color:var(--plum)}
+.flip .f small{color:var(--rose);font-weight:800;font-size:12px;letter-spacing:1px}
+.flip .b{background:linear-gradient(140deg,#5b2a86,#1c1a3f);color:#fff;transform:rotateY(180deg);font-size:14px}
+.flip .b b{color:var(--peach)}
+.quiz{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:var(--shadow);margin-top:18px}
+.quiz .q{font-weight:800;font-size:16px;color:var(--plum);margin-bottom:12px}
+.quiz .opts{display:grid;gap:8px;grid-template-columns:1fr 1fr}
+.quiz .opts button{border:1px solid var(--line);background:var(--cream);border-radius:14px;padding:14px;font-weight:700;font-size:15px;cursor:pointer;color:var(--ink)}
+.quiz .opts button.ok{background:var(--sage);color:#fff;border-color:var(--sage)}
+.quiz .opts button.ko{background:#f3d3d6;color:#8a2a3c}
+.quiz .fb{margin-top:10px;font-size:14px;min-height:22px}
+.quiz .nx{margin-top:10px;border:0;background:var(--wine);color:#fff;border-radius:99px;padding:10px 18px;font-weight:800;cursor:pointer}
+.moods{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:12px 0 16px}
+.mood{border:1px solid var(--line);background:#fff;border-radius:16px;padding:12px 6px;text-align:center;cursor:pointer;font-weight:800;color:var(--wine);font-size:13px}
+.mood i{display:block;font-style:normal;font-size:22px;margin-bottom:3px}
+.mood.on{background:var(--blush);border-color:var(--rose);box-shadow:0 6px 16px rgba(168,80,143,.25)}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-bottom:16px}
+.cal button{aspect-ratio:1;border-radius:12px;border:1px solid var(--line);background:#fff;font-weight:800;color:var(--plum);cursor:pointer;font-size:14px;position:relative;padding:0}
+.cal button.w1{background:#f2f7f2}.cal button.plaisir{background:var(--gold-soft)}
+.cal button.on{background:var(--wine);color:#fff;border-color:var(--wine)}
+.cal button.done:after{content:"";position:absolute;bottom:5px;left:50%;margin-left:-3px;width:6px;height:6px;border-radius:50%;background:var(--sage)}
+.menu-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:var(--shadow)}
+.swap{border:1px dashed var(--rose);background:transparent;color:var(--wine);border-radius:99px;padding:6px 12px;font-size:12px;font-weight:800;cursor:pointer;margin-top:6px}
+.donebtn{margin-top:14px;width:100%;border:0;background:var(--plum);color:#fff;border-radius:14px;padding:14px;font-weight:800;font-size:15px;cursor:pointer}
+.donebtn.ok{background:var(--sage)}
+.progress{height:10px;background:#f0eaf8;border-radius:9px;overflow:hidden;margin:6px 0 4px}
+.progress div{height:100%;background:linear-gradient(90deg,var(--rose),var(--wine));width:0;transition:width .5s}
+#tform input{width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;font-size:16px;background:var(--cream);color:var(--ink);font-family:inherit;-webkit-appearance:none;appearance:none;min-height:46px}
+.shop h4{margin:4px 0 6px;color:var(--wine);font-size:15px;letter-spacing:.5px}
+.rot{background:var(--gold-soft);border-radius:18px;padding:14px;margin-top:14px}
+.partner{margin-top:52px;border-radius:26px;padding:28px;color:#fff;background:linear-gradient(140deg,#5b2a86,#1a1830)}
+.partner h2{font-family:Georgia,serif;font-weight:400;margin:0 0 8px;font-size:28px}
+.code{display:inline-block;margin:10px 0;padding:12px 22px;border-radius:14px;background:#fff;color:var(--wine);font-weight:900;letter-spacing:4px;font-size:20px;cursor:pointer}
+.note{font-size:12px;color:var(--muted);margin-top:30px}
+.foot{text-align:center;padding:26px;font-size:11px;letter-spacing:3px;color:#fff;background:var(--plum)}
+.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(120px);background:var(--plum);color:#fff;padding:12px 20px;border-radius:99px;font-weight:700;font-size:14px;transition:transform .35s;z-index:9;box-shadow:0 10px 26px rgba(0,0,0,.25);white-space:nowrap}
+.toast.show{transform:translateX(-50%) translateY(0)}
+.cc h3{margin-bottom:12px}
+.ccnav{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.ccnav button{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:var(--cream);font-size:22px;color:var(--wine);cursor:pointer}
+.ccnav b{font-family:Georgia,serif;font-weight:400;font-size:20px;color:var(--plum);text-transform:capitalize}
+.ccsum{display:grid;grid-template-columns:170px 1fr;gap:20px;align-items:center}
+.ring{position:relative;width:170px;height:170px}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.rbg{fill:none;stroke:#f0eaf8;stroke-width:12}
+.rfg{fill:none;stroke:var(--wine);stroke-width:12;stroke-linecap:round;stroke-dasharray:326.7;stroke-dashoffset:326.7;transition:stroke-dashoffset .6s,stroke .3s}
+.rtxt{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.rtxt b{font-family:Georgia,serif;font-weight:400;font-size:34px;color:var(--plum);line-height:1}
+.rtxt span{font-size:12px;color:var(--muted);font-weight:700;text-align:center;margin-top:4px}
+.ccmac{display:grid;gap:10px}
+#ccgoal,.ccin{width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;font-size:16px;background:var(--cream);color:var(--ink);font-family:inherit;min-height:46px;-webkit-appearance:none;appearance:none}
+.ccin{margin-top:10px}
+#ccres{display:grid;gap:6px;margin-top:8px}
+.ccit{display:flex;justify-content:space-between;gap:10px;padding:11px 12px;border:1px solid var(--line);border-radius:12px;background:#fff;cursor:pointer;font-size:14px}
+.ccit span{color:var(--muted);white-space:nowrap}
+.ccsel{margin-top:12px;padding:12px;border-radius:12px;background:var(--gold-soft);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:14px}
+.ccrow{display:flex;gap:8px;align-items:center;margin-top:8px;flex-wrap:wrap}
+.ccrow .ccin{flex:1;margin:0;min-width:120px}
+.ccrow .donebtn{width:auto;padding:13px 20px}
+.ccrow4{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.ccd{margin-top:12px;font-size:14px}
+.ccd summary{cursor:pointer;font-weight:800;color:var(--wine)}
+#ccfavs{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+#ccfavs button{border:1px solid var(--line);background:var(--blush);color:var(--wine);border-radius:99px;padding:7px 12px;font-size:13px;font-weight:700;cursor:pointer}
+.ccm{border-top:1px dashed #d8cbec;padding:12px 0}
+.ccm:first-of-type{border:0}
+.ccm h4{display:flex;justify-content:space-between;margin:0 0 6px;color:var(--plum);font-size:15px}
+.ccm h4 span{color:var(--rose)}
+.cce{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:14px;padding:4px 0}
+.cce span{color:var(--muted);white-space:nowrap}
+.cce button{border:0;background:none;color:#c0392b;font-size:18px;cursor:pointer;padding:0 4px}
+.ccweek{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;align-items:end;height:140px}
+.ccweek div{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;font-size:11px;color:var(--muted);font-weight:700}
+.ccweek i{display:block;width:100%;border-radius:8px 8px 3px 3px;background:linear-gradient(var(--gold),var(--wine));margin-bottom:4px;min-height:3px}
+.ccweek i.over{background:linear-gradient(#e08a8a,#c0392b)}
+@media(max-width:720px){.ccsum{grid-template-columns:1fr;justify-items:center}.ccmac{width:100%}.ccrow4{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){.hero{padding:40px 6% 34px}.hero h1{font-size:31px}.sub{margin-left:0;margin-top:14px}.title{font-size:27px}.g2,.g3,.g4,.levels{grid-template-columns:1fr}.g4.stats{grid-template-columns:1fr 1fr}#tform{grid-template-columns:1fr 1fr}.moods{grid-template-columns:repeat(2,1fr)}.quiz .opts{grid-template-columns:1fr}.flipgrid{grid-template-columns:1fr 1fr!important}.flip,.flip .in{min-height:190px}.flip .f b{font-size:18px}}
+@media print{.nav,.toast,.donebtn,.swap{display:none}.panel{display:block}}
+.k2date{position:relative;cursor:pointer;text-align:center}
+.k2date input{position:absolute;inset:0;opacity:0;width:100%;cursor:pointer}
+.k2pal{font-size:13px;color:var(--muted);margin:0}
+.k2water{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line)}
+.k2wh{display:flex;justify-content:space-between;font-size:14px;color:var(--plum);margin-bottom:8px}
+.k2wh span{color:var(--muted);font-weight:700}
+.k2glasses{display:grid;grid-template-columns:repeat(10,1fr);gap:5px}
+.k2glasses button{height:34px;border-radius:8px 8px 12px 12px;border:1.5px solid var(--peach);background:#fff;cursor:pointer;padding:0}
+.k2glasses button.on{background:linear-gradient(var(--peach),var(--gold));border-color:var(--rose)}
+.k2meals{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch}
+.k2meals button,.k2chips button{flex:none;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:99px;padding:9px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit}
+.k2meals button.on{background:var(--plum);color:#fff;border-color:var(--plum)}
+.k2tabs{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin-top:12px;background:var(--cream);border-radius:14px;padding:4px}
+.k2tabs button{border:0;background:none;padding:10px 2px;border-radius:10px;font-size:12px;font-weight:800;color:var(--muted);cursor:pointer;font-family:inherit}
+.k2tabs button.on{background:#fff;color:var(--wine);box-shadow:0 2px 8px rgba(14,31,58,.08)}
+.k2pane{display:none;margin-top:6px}
+.k2pane.on{display:block}
+.k2pane h4{margin:14px 0 4px;color:var(--plum)}
+.k2search{display:flex;gap:8px;align-items:center}
+.k2search .ccin{flex:1}
+.k2mic{margin-top:10px;min-height:46px;padding:0 14px;border-radius:12px;border:1px solid var(--line);background:var(--blush);color:var(--wine);font-weight:800;font-size:13px;cursor:pointer;font-family:inherit}
+.k2mic.rec{background:var(--wine);color:#fff}
+.k2chips{display:flex;gap:6px;overflow-x:auto;margin-top:10px;padding-bottom:2px}
+.k2chips button.on{background:var(--blush);color:var(--wine);border-color:var(--peach)}
+.ccit b{font-weight:700}
+.ccit small{display:block;color:var(--muted);font-size:12px;font-weight:600}
+.k2help{font-size:13px;color:var(--muted);margin:6px 0 8px}
+.k2lbl{display:inline-block;text-align:center;cursor:pointer}
+.k2ph{display:grid;gap:8px}
+.k2vid{position:relative;margin-top:10px;border-radius:14px;overflow:hidden;background:#000}
+.k2vid video{width:100%;display:block;max-height:320px;object-fit:cover}
+.k2aim{position:absolute;left:12%;right:12%;top:38%;height:24%;border:2px solid rgba(255,255,255,.85);border-radius:10px;pointer-events:none}
+.k2vid .swap{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);background:#fff}
+.k2unit{max-width:190px}
+.k2prev{font-size:14px;margin:8px 0 0;color:var(--plum);font-weight:700}
+.k2pq{display:grid;grid-template-columns:1fr;gap:8px;padding:12px 0;border-bottom:1px dashed var(--line)}
+.k2pq label{font-size:12px;font-weight:800;color:var(--muted);letter-spacing:1px;grid-column:1/-1}
+.k2pq select{margin:0}
+.k2hand{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.k2hand button{min-width:40px;height:40px;border-radius:10px;border:1px solid var(--line);background:#fff;font-weight:800;color:var(--wine);cursor:pointer;font-family:inherit}
+.k2hand button.on{background:var(--wine);color:#fff;border-color:var(--wine)}
+.ccm h4 em{font-style:normal;font-size:11px;font-weight:800;padding:3px 8px;border-radius:99px;margin-left:6px;vertical-align:middle}
+.ccm h4 em.ok{background:#e3f1e8;color:#2e7d4f}
+.ccm h4 em.lo{background:#f6f2fc;color:#a6621b}
+.cce div:first-child{cursor:pointer}
+.k2ma{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.k2ma button{border:1px solid var(--line);background:var(--cream);color:var(--wine);border-radius:99px;padding:6px 11px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit}
+.k2th{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}
+.k2th img{width:64px;height:64px;object-fit:cover;border-radius:10px;cursor:pointer}
+.k2coach h3{margin-bottom:6px}
+.k2sug{display:grid;gap:6px;margin-top:8px}
+.k2feel{margin-top:10px}
+.k2feel>span{display:block;font-size:12px;font-weight:800;color:var(--muted);letter-spacing:1px;margin-bottom:6px;text-transform:uppercase}
+.k2opt{flex-wrap:wrap;overflow:visible;margin-top:0}.k2opt button.on{background:var(--wine);color:#fff;border-color:var(--wine)}
+textarea.ccin{resize:vertical;min-height:60px}
+.ccweek.m30{grid-template-columns:repeat(30,1fr);gap:2px}
+.ccweek.m30 div{font-size:0}
+.ccweek{position:relative;margin-top:14px}
+.k2gl{position:absolute;left:0;right:0;border-top:2px dashed var(--rose);pointer-events:none}
+.k2stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:14px}
+.k2stats div{background:var(--cream);border-radius:12px;padding:10px;text-align:center}
+.k2stats b{display:block;font-family:Georgia,serif;font-weight:400;font-size:21px;color:var(--plum)}
+.k2stats span{font-size:11px;color:var(--muted);font-weight:700}
+#k2gal .k2th img{width:54px;height:54px}
+.k2wl{font-size:13px;color:var(--muted);margin-top:6px}
+.k2zoom{position:fixed;inset:0;background:rgba(5,12,24,.88);display:flex;align-items:center;justify-content:center;z-index:20;padding:20px}
+.k2zoom img{max-width:100%;max-height:80vh;border-radius:14px}
+.k2zoom button{position:absolute;top:18px;right:18px}
+@media(max-width:720px){.k2stats{grid-template-columns:1fr 1fr}.k2tabs button{font-size:11px}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="hero">
+<div class="brand"><div class="logo">BF</div>BRAVO FIT</div>
+<div class="sub">RÉÉQUILIBRAGE ALIMENTAIRE · 9 MOIS</div>
+<span class="pill">PROGRAMME PERSONNALISÉ · CALY ♡</span>
+<h1>Ton chemin vers <em>la force</em>, à ton rythme.</h1>
+<p>Caly, ces 9 mois, on ne court après aucun chiffre : on construit, pas à pas, un corps plus fort, plus solide, et la confiance qui va avec. Chaque repas compte, et on y va doucement.</p>
+<div class="affhero"><small id="affd">AFFIRMATION DU JOUR</small><b id="afft"></b></div>
+<nav class="nav"><a href="#profil">Profil</a><a href="#tanita">Tanita</a><a href="#calories">Énergie</a><a href="#annee">Mes 9 mois</a><a href="#horaires">5 repas</a><a href="#reset">Démarrage 7 jours</a><a href="#aliments">Manger plus</a><a href="#nutriments">Nutriments</a><a href="#quiz">Quiz du jour</a><a href="#graines">Boosters</a><a href="#muesli">Mueslis et granolas</a><a href="#guide">Guide</a><a href="#courses">Courses</a><a href="#compteur">Compteur</a><a href="#menus">31 jours</a><a href="#complements">Compléments</a></nav>
+</header>
+<main class="content">
+
+<section class="block" id="profil"><div class="kicker">Point de départ</div><h2 class="title">Ton profil</h2><div class="rule"></div><div class="card profile"><div class="chips"><span class="chip">Caly · 20 ans</span><span class="chip">1,60 m</span><span class="chip">48,1 kg</span><span class="chip">Objectif 55 à 58 kg</span><span class="chip gold">Étudiante</span><span class="chip gold">Musculation et Pilates</span><span class="chip gold">Suivi 9 mois</span></div><p>Ton objectif : devenir plus forte, plus solide, avec un bas du corps plus développé, et reprendre confiance en toi. Pour construire du muscle, ton corps a besoin de matériaux et d'énergie : il faut manger un peu plus, régulièrement. On sait que c'est difficile pour toi en ce moment, alors on ne va pas passer de rien à tout. On monte par petites étapes de 2 semaines, et chaque étape doit devenir facile avant de passer à la suivante.</p><div class="grid g4 stats" style="margin-top:18px"><div class="stat"><b>18,1</b><span>IMC de départ</span></div><div class="stat"><b>1 194</b><span>kcal métabolisme</span></div><div class="stat"><b>≈ 1 800</b><span>kcal maintien</span></div><div class="stat"><b>1 600</b><span>kcal pour démarrer</span></div></div></div><div class="callout"><h3>Ce qui compte vraiment</h3><p>Ta valeur ne dépend d'aucun chiffre. Ici, on regarde surtout ta force en séance, ton énergie, ton humeur, ton sommeil, et la façon dont tu te sens dans ton corps. Le poids, on le regarde seulement ensemble, une fois toutes les 4 semaines, avec la Tanita. Pas besoin de balance à la maison.</p></div><div class="callout" style="margin-top:14px"><h3>Bien entourée</h3><p>Je m'occupe de tes séances et de ton protocole. Pour la partie santé, c'est important d'avoir aussi un médecin, et si possible un ou une diététicienne qui connaît bien les troubles alimentaires, qui suit ton parcours. Si tu ressens des vertiges, des malaises, des palpitations, une très grande fatigue ou si tes règles s'arrêtent, parles-en vite à ton médecin. Et si un jour c'est trop dur, dis-le moi : on adapte, sans jugement.</p></div></section>
+
+<section class="block" id="tanita"><div class="kicker">Mesure Tanita RD-545 · départ</div><h2 class="title">Ta composition corporelle</h2><div class="rule"></div><p class="lead">Cette mesure est ta photo de départ. On la refait ensemble toutes les 4 semaines, dans les mêmes conditions : le matin, à jeun, après être passée aux toilettes, sans sport avant.</p><div class="grid g4 stats"><div class="stat"><b>48,1 kg</b><span>Poids</span></div><div class="stat"><b>21,9 %</b><span>Masse grasse · ≈ 10,5 kg</span></div><div class="stat"><b>35,65 kg</b><span>Masse musculaire</span></div><div class="stat"><b>1,0</b><span>Graisse viscérale</span></div><div class="stat"><b>1 194</b><span>kcal métabolisme</span></div><div class="stat"><b>12 ans</b><span>Âge métabolique</span></div><div class="stat"><b>60,0 %</b><span>Masse hydrique</span></div><div class="stat"><b>1,9 kg</b><span>Masse osseuse</span></div></div><div class="tw"><table><tr><th>Zone</th><th>Masse grasse</th><th>Muscle</th><th>Qualité musculaire</th></tr><tr><td>Tronc</td><td>17,5 %</td><td>20,45 kg</td><td>·</td></tr><tr><td>Bras gauche</td><td>17,2 %</td><td>1,70 kg</td><td>69</td></tr><tr><td>Bras droit</td><td>16,9 %</td><td>1,75 kg</td><td>71</td></tr><tr><td>Jambe gauche</td><td>29,5 %</td><td>5,85 kg</td><td>48</td></tr><tr><td>Jambe droite</td><td>29,5 %</td><td>5,90 kg</td><td>46</td></tr></table></div><p style="font-size:13px;color:var(--muted);margin-top:8px">Qualité musculaire globale : 52. Morphologie : type 4.</p><div class="grid g2" style="margin-top:14px"><div class="card"><h3>Ta masse grasse est saine</h3><p>21,9 %, c'est dans la zone saine pour ton âge (21 à 33 %), tout en bas. Le gras n'est pas l'ennemi : il fabrique tes hormones, règle ton cycle, protège tes os et te donne de l'énergie. Pendant la prise de muscle, il est normal et sain qu'il remonte un peu.</p></div><div class="card"><h3>Priorité bas du corps</h3><p>La qualité musculaire, c'est la « force » de ton muscle. Celle de tes bras est bonne (69 et 71), celle de tes jambes plus basse (48 et 46). Ça tombe bien : c'est exactement ce que tu veux développer. En séance, on travaille fessiers, cuisses et jambes : squats, hip thrust, fentes, et le Pilates pour le gainage.</p></div><div class="card"><h3>Morphologie type 4</h3><p>Sur la Tanita, le type 4 veut dire « peu de muscle pour le moment ». L'objectif de tes 9 mois : aller vers le type 6, « standard musclé ». Plus de muscle, un corps plus solide.</p></div><div class="card"><h3>Tes os, à chouchouter</h3><p>Ta masse osseuse est à 1,9 kg, plutôt dans le bas de la moyenne pour ton poids. Après une période où l'on a peu mangé, les os ont besoin de calcium, de vitamine D, de protéines et de musculation. Parles-en à ton médecin : il peut vérifier ta vitamine D et, s'il le juge utile, la solidité de tes os.</p></div><div class="card"><h3>Âge métabolique : 12 ans</h3><p>Sur une Tanita, un âge métabolique plus bas que ton âge réel est en général une bonne nouvelle. Mais pour toi, ce n'est pas un objectif : ce qui compte, c'est de prendre du muscle et de l'énergie. S'il remonte un peu vers tes 20 ans pendant la prise de muscle, c'est normal.</p></div><div class="card"><h3>Hydratation et graisse viscérale</h3><p>Ta masse hydrique est à 60 % : c'est excellent, tout en haut de la zone (45 à 60 %). Ta graisse viscérale (la graisse cachée autour des organes) est à 1 : très basse. Sur ces deux points, tout va bien.</p></div></div><div class="callout"><h3>Tes objectifs pour la prochaine mesure</h3><p>Masse musculaire en hausse, surtout sur les jambes, masse grasse stable ou en légère hausse (c'est normal et sain), hydratation qui reste bonne. Sur la balance, une petite hausse de 0,5 à 1,5 kg en 4 semaines serait un très beau début. Objectif à 9 mois : entre 55 et 58 kg, avec du muscle en plus.</p></div><div class="card" style="margin-top:14px"><h3>Mes mesures Tanita</h3><p style="font-size:14px;color:var(--muted);margin-bottom:10px">On les note ensemble en séance : elles restent enregistrées sur ton téléphone.</p><div class="grid g2" id="tform"><input id="tdate" type="date"><input id="tpoids" inputmode="decimal" placeholder="Poids (kg)"><input id="tmg" inputmode="decimal" placeholder="Masse grasse (%)"><input id="tmm" inputmode="decimal" placeholder="Muscle (kg)"><input id="tvis" inputmode="decimal" placeholder="Graisse viscérale"><input id="teau" inputmode="decimal" placeholder="Masse hydrique (%)"></div><button class="donebtn" id="tadd">Enregistrer ma mesure</button><div class="tw"><table id="ttab"></table></div></div></section>
+
+<section class="block" id="calories"><div class="kicker">Ton énergie</div><h2 class="title">Ton maintien et tes étapes</h2><div class="rule"></div><p class="lead">Pour construire du muscle, ton corps a besoin d'un peu plus d'énergie que ce qu'il dépense. On y arrive par marches, pour que ton estomac et ta tête aient le temps de s'habituer.</p><div class="levels"><div class="level lv1"><small>DÉMARRAGE</small><b>1 600 kcal</b><p>Tes deux premières semaines. Si tu manges déjà plus, on démarre directement à l'étape 2.</p></div><div class="level lv2"><small>MAINTIEN</small><b>1 800 kcal</b><p>Ce que ton corps dépense chaque jour. À partir de là, chaque étape construit.</p></div><div class="level lv3"><small>PRISE DE MUSCLE</small><b>2 100 kcal</b><p>Environ 300 kcal au-dessus de ton maintien : assez pour construire, sans forcer.</p></div></div><div class="formula"><h3>Comment j'ai calculé</h3><p><b>1. Métabolisme de base</b> : <b>1 194 kcal</b>, mesuré par ta Tanita. C'est ce que ton corps utilise au repos complet, juste pour fonctionner : respirer, penser, garder ton cœur et tes organes en marche.</p><p><b>2. Maintien</b> : 1 194 × 1,5 (études, marche, une séance par semaine et le Pilates) = <b>≈ 1 800 kcal</b>.</p><p><b>3. Les étapes</b> : on part de 1 600 kcal et on monte de 150 à 200 kcal toutes les 2 à 3 semaines, jusqu'à 2 100 kcal. Chaque étape doit devenir facile avant de passer à la suivante.</p><p><b>La règle de douceur</b> : si une étape est trop difficile, on reste dessus plus longtemps. On ne recule jamais en dessous de ton maintien sans en parler ensemble.</p></div><div class="card sim"><div class="row"><h3 style="margin:0">Visualise tes macros</h3><div class="seg" id="seg"><button data-k="e1" class="on">Étape 1</button><button data-k="e2">Étape 2</button><button data-k="e3">Étape 3</button><button data-k="e4">Étape 4</button><button data-k="e5">Étape 5</button></div></div><div style="margin-top:14px"><span class="big" id="kcal">1 600</span> <span style="color:var(--muted);font-weight:700">kcal / jour</span></div><div class="bars"><div class="bar"><label><span>Protéines</span><span id="bp"></span></label><div class="track"><div class="fill" id="fp" style="background:var(--wine)"></div></div></div><div class="bar"><label><span>Glucides</span><span id="bg"></span></label><div class="track"><div class="fill" id="fg" style="background:var(--gold)"></div></div></div><div class="bar"><label><span>Lipides</span><span id="bl"></span></label><div class="track"><div class="fill" id="fl" style="background:var(--sage)"></div></div></div></div><p class="lead" id="simtxt" style="margin:14px 0 0;font-size:14px"></p></div><div class="callout"><h3>Pourquoi 90 g de protéines</h3><p>Les protéines sont les briques de ton muscle : sans elles, la séance ne peut pas construire. 90 g par jour, c'est environ 20 g à chacun de tes 5 repas : un yaourt grec, deux œufs, un morceau de poulet, un verre de lait. Elles restent les mêmes à chaque étape. Ce sont les glucides et les lipides qui augmentent.</p></div></section>
+
+<section class="block" id="annee"><div class="kicker">Vision long terme</div><h2 class="title">Tes 9 mois, étape par étape</h2><div class="rule"></div><p class="lead">Quand on n'a pas l'habitude de manger beaucoup, passer de rien à tout est impossible. Alors on monte doucement, et chaque étape doit devenir facile avant la suivante.</p><div class="timeline"><div class="step"><div class="card"><div class="meta">SEMAINES 1 ET 2 · 1 600 KCAL</div><h4>Étape 1 · démarrage en douceur</h4><p>90 g protéines · 53 g lipides · 191 g glucides. On installe 5 petits repas par jour. Le but n'est pas la quantité, c'est la régularité : ne sauter aucun repas.</p></div></div><div class="step"><div class="card"><div class="meta">SEMAINES 3 ET 4 · 1 800 KCAL</div><h4>Étape 2 · ton maintien · +200 kcal</h4><p>90 g protéines · 60 g lipides · 225 g glucides. Ton corps reçoit enfin tout ce qu'il dépense. L'énergie revient, en séance comme en cours.</p></div></div><div class="step"><div class="card"><div class="meta">SEMAINES 5 À 7 · 1 950 KCAL</div><h4>Étape 3 · +150 kcal</h4><p>90 g protéines · 65 g lipides · 251 g glucides. Le début de la construction. On ajoute surtout des aliments riches sous un petit volume : huile, oléagineux, laitages entiers.</p></div></div><div class="step"><div class="card"><div class="meta">SEMAINES 8 À 12 · 2 100 KCAL</div><h4>Étape 4 · prise de muscle · +150 kcal</h4><p>90 g protéines · 70 g lipides · 278 g glucides. Environ 300 kcal au-dessus de ton maintien : c'est là que le muscle se construit, séance après séance.</p></div></div><div class="step"><div class="card"><div class="meta">SEULEMENT SI LE POIDS NE BOUGE PLUS · 2 250 KCAL</div><h4>Étape 5 · +150 kcal</h4><p>90 g protéines · 75 g lipides · 304 g glucides. Uniquement si rien ne bouge pendant 3 semaines à l'étape 4, et seulement si tu t'en sens capable.</p></div></div><div class="step"><div class="card"><div class="meta">MOIS 3 · POINT D'ÉTAPE</div><h4>Nouvelle mesure Tanita</h4><p>On regarde ensemble ce que ton corps a construit et on recalcule ton maintien, qui aura augmenté avec ton muscle.</p></div></div><div class="step"><div class="card"><div class="meta">MOIS 4 À 6</div><h4>Construire</h4><p>On reste à l'étape qui fonctionne, avec des séances de plus en plus fortes pour le bas du corps. Protéines toujours à 90 g, un peu plus si ton poids monte.</p></div></div><div class="step"><div class="card"><div class="meta">MOIS 7 À 9</div><h4>Consolider entre 55 et 58 kg</h4><p>On stabilise ton nouveau poids, à ton nouveau maintien. Tu repars avec des repères solides, en autonomie, et un corps qui te ressemble.</p></div></div></div><h3 style="margin:22px 0 10px;color:var(--wine)">Tes étapes, une par une</h3><div class="tw"><table><tr><th>Étape</th><th>Calories</th><th>Protéines</th><th>Lipides</th><th>Glucides</th></tr><tr><td>Étape 1 · Semaines 1 et 2</td><td><b>1 600</b></td><td>90 g</td><td>53 g</td><td>191 g</td></tr><tr><td>Étape 2 · Semaines 3 et 4</td><td><b>1 800</b></td><td>90 g</td><td>60 g</td><td>225 g</td></tr><tr><td>Étape 3 · Semaines 5 à 7</td><td><b>1 950</b></td><td>90 g</td><td>65 g</td><td>251 g</td></tr><tr><td>Étape 4 · Semaines 8 à 12</td><td><b>2 100</b></td><td>90 g</td><td>70 g</td><td>278 g</td></tr><tr><td>Étape 5 · Seulement si le poids ne bouge plus 3 semaines</td><td><b>2 250</b></td><td>90 g</td><td>75 g</td><td>304 g</td></tr></table></div><div class="formula"><h3>Le rythme à viser</h3><p>Environ <b>+0,2 à 0,4 kg par semaine</b> en moyenne, une fois l'étape 3 atteinte. C'est le rythme qui construit surtout du muscle. Pour atteindre 55 à 58 kg, il faut environ 7 à 10 kg : c'est tout à fait réaliste en 9 mois, sans te forcer.</p></div><div class="callout"><h3>La règle d'ajustement</h3><p>Chaque étape est validée ensemble, en séance. Si une étape est trop dure (ventre trop plein, angoisse, fatigue), on reste dessus plus longtemps, sans culpabilité. Si tout va bien et que le poids ne bouge pas pendant 3 semaines, on passe à l'étape suivante.</p></div></section>
+
+<section class="block" id="horaires"><div class="kicker">Ton rythme</div><h2 class="title">Tes 5 petits repas</h2><div class="rule"></div><p class="lead">Cinq petits repas passent beaucoup mieux que trois gros. Choisis ta journée : les heures sont des exemples, décale tout selon ton emploi du temps.</p><div class="seg" id="hseg" style="margin-bottom:14px"><button data-k="c" class="on">Jour de cours</button><button data-k="s">Jour de séance</button><button data-k="w">Week-end</button></div><div id="hbox"></div><p class="lead" id="htxt" style="font-size:14px;margin-top:12px"></p><div class="grid g2" style="margin-top:14px"><div class="card"><h3>Même sans faim</h3><p>Après une période où l'on a peu mangé, les signaux de faim sont souvent faibles ou absents. C'est normal, et ça revient avec le temps. En attendant, on mange à l'heure, comme on prend un rendez-vous avec soi-même.</p></div><div class="card"><h3>Boire entre les repas</h3><p>L'eau remplit l'estomac. Bois surtout entre les repas, et seulement quelques gorgées pendant : il te restera plus de place pour manger. Vise environ 2 L par jour.</p></div><div class="card"><h3>La vape et l'appétit</h3><p>La nicotine coupe l'appétit. Si tu vapotes, évite de le faire juste avant ou juste après un repas : laisse-toi au moins 30 minutes de chaque côté.</p></div><div class="card"><h3>Les 3 règles</h3><p>Jamais plus de 3 h 30 sans manger. Des protéines à chaque repas. Et si un repas solide ne passe pas, un smoothie ou un verre de lait compte comme un vrai repas.</p></div></div><script>(function(){var H={"c": "<div class=\"grid g4 stats\"><div class=\"stat\"><b>7h30</b><span>Petit-déjeuner</span></div><div class=\"stat\"><b>10h30</b><span>Collation</span></div><div class=\"stat\"><b>12h30</b><span>Déjeuner</span></div><div class=\"stat\"><b>16h30</b><span>Goûter</span></div><div class=\"stat\"><b>19h30</b><span>Dîner</span></div></div>", "s": "<div class=\"grid g4 stats\"><div class=\"stat\"><b>7h30</b><span>Petit-déjeuner</span></div><div class=\"stat\"><b>10h30</b><span>Collation</span></div><div class=\"stat\"><b>12h30</b><span>Déjeuner</span></div><div class=\"stat\"><b>16h</b><span>Goûter avant la séance</span></div><div class=\"stat\"><b>19h30</b><span>Dîner après la séance</span></div></div>", "w": "<div class=\"grid g4 stats\"><div class=\"stat\"><b>9h30</b><span>Petit-déjeuner</span></div><div class=\"stat\"><b>12h30</b><span>Déjeuner</span></div><div class=\"stat\"><b>16h</b><span>Goûter</span></div><div class=\"stat\"><b>19h30</b><span>Dîner</span></div><div class=\"stat\"><b>21h30</b><span>Petite collation du soir</span></div></div>"},T={"c": "Jour de cours. Une collation dans ton sac pour 10h30, et un goûter prêt pour la sortie des cours : ce qui est prêt se mange.", "s": "Jour de séance. Le goûter 1 h à 1 h 30 avant l'entraînement te donne de l'énergie, et le dîner après la séance aide ton muscle à se reconstruire. Ne saute jamais le dîner après une séance.", "w": "Week-end. Tu te lèves plus tard, alors tu décales tout, mais tu gardes tes 5 moments. La petite collation du soir (un verre de lait, un yaourt) est parfaite devant un film."};function sh(k){document.getElementById('hbox').innerHTML=H[k];document.getElementById('htxt').textContent=T[k];document.querySelectorAll('#hseg button').forEach(function(b){b.classList.toggle('on',b.dataset.k==k)})}document.querySelectorAll('#hseg button').forEach(function(b){b.onclick=function(){sh(b.dataset.k)}});sh('c')})();</script></section>
+
+<section class="block" id="reset">
+<div class="reset">
+<div class="kicker">Semaines 1 et 2</div>
+<h2 class="title" style="margin-bottom:4px">Démarrage en douceur · 7 jours</h2>
+<p class="lead">Une semaine type pour ton étape 1, à refaire 2 fois. <b>1 600 kcal · 90 g protéines · 53 g lipides · 191 g glucides</b>, en 5 petits repas. Si une portion est trop grande, mange ce que tu peux et garde le reste pour plus tard : chaque bouchée compte.</p>
+<div class="days" id="rdays"></div>
+<div class="card" id="rday"></div>
+<div class="card" style="margin-top:14px"><h3>Hydratation du jour · objectif 2 L</h3><p style="font-size:14px;color:var(--muted)">Touche un verre à chaque fois que tu bois 250 ml. Ton hydratation est déjà excellente : bois surtout entre les repas, pour garder de la place dans ton estomac.</p><div class="water" id="water"></div><p style="margin-top:8px;font-weight:800;color:var(--wine)" id="wtxt">0 L sur 2 L</p></div>
+<div class="formula"><h3>Repère important</h3><p>Viandes, poissons, riz, pâtes, quinoa et pommes de terre : toujours pesés <b>crus</b>. C'est aussi comme ça que les grammages des menus sont donnés.</p></div>
+</div>
+</section>
+
+<section class="block" id="aliments"><div class="kicker">Sans te forcer</div><h2 class="title">Manger un peu plus, facilement</h2><div class="rule"></div><div class="tabs" data-group="food"><button class="on" data-p="f1">Astuces</button><button data-p="f2">Aliments alliés</button><button data-p="f3">Smoothies</button></div><div class="panel on" id="f1"><div class="grid g2"><div class="card"><h3>Ajouter sans augmenter le volume</h3><p>Une cuillère d'huile d'olive sur tes légumes, du fromage râpé sur tes pâtes, du beurre de cacahuète dans ton porridge : ton assiette ne grossit pas, mais elle t'apporte beaucoup plus.</p></div><div class="card"><h3>Boire une partie de ton énergie</h3><p>Le lait entier, les smoothies et les yaourts à boire passent beaucoup plus facilement qu'un repas solide. Un smoothie peut remplacer un goûter, ou compléter un repas difficile.</p></div><div class="card"><h3>Des légumes cuits plutôt que crus</h3><p>Les crudités et les grosses salades remplissent vite l'estomac avec très peu d'énergie. Au début, préfère les légumes cuits, en petite quantité, et garde la place pour le reste de l'assiette.</p></div><div class="card"><h3>Des collations toujours prêtes</h3><p>Dans ton sac : une poignée d'amandes, une barre de céréales, un yaourt à boire, une compote. Quand c'est prêt, c'est beaucoup plus simple.</p></div><div class="card"><h3>Une assiette plus petite</h3><p>Une petite assiette bien remplie fait moins peur qu'une grande assiette à moitié vide. Tu peux toujours te resservir.</p></div><div class="card"><h3>Manger en bonne compagnie</h3><p>Avec une amie, en famille, ou devant une série que tu aimes : un moment détendu aide à manger plus sereinement.</p></div></div></div><div class="panel" id="f2"><p class="lead">Beaucoup d'énergie dans un petit volume : ce sont tes meilleurs alliés pour monter les étapes sans te remplir l'estomac.</p><div class="scale"><div class="food"><i class="dot g"></i><span class="n">Huile d'olive · 1 c. à soupe</span><span class="v">≈ 90 kcal</span></div><div class="food"><i class="dot g"></i><span class="n">Beurre de cacahuète · 1 c. à soupe (15 g)</span><span class="v">≈ 90 kcal</span></div><div class="food"><i class="dot g"></i><span class="n">Amandes ou noix · 1 poignée (30 g)</span><span class="v">≈ 180 kcal</span></div><div class="food"><i class="dot g"></i><span class="n">Avocat · ½</span><span class="v">≈ 160 kcal</span></div><div class="food"><i class="dot g"></i><span class="n">Comté ou emmental · 30 g</span><span class="v">≈ 120 kcal</span></div><div class="food"><i class="dot g"></i><span class="n">Granola maison · 50 g</span><span class="v">≈ 200 kcal</span></div><div class="food"><i class="dot g"></i><span class="n">Lait entier · 1 verre (250 ml)</span><span class="v">≈ 160 kcal</span></div><div class="food"><i class="dot g"></i><span class="n">Yaourt grec entier · 150 g</span><span class="v">≈ 150 kcal</span></div><div class="food"><i class="dot g"></i><span class="n">Dattes · 3 (30 g)</span><span class="v">≈ 85 kcal</span></div><div class="food"><i class="dot g"></i><span class="n">Chocolat noir · 2 carrés (20 g)</span><span class="v">≈ 110 kcal</span></div><div class="food"><i class="dot g"></i><span class="n">Pain complet + beurre · 1 tartine</span><span class="v">≈ 130 kcal</span></div><div class="food"><i class="dot g"></i><span class="n">Riz cuit · 150 g</span><span class="v">≈ 195 kcal</span></div></div></div><div class="panel" id="f3"><p class="lead">Mixe tout, bois tranquillement. Un smoothie, c'est un vrai repas.</p><div class="grid g2"><div class="card"><h3>Banane-cacahuète</h3><p>250 ml de lait entier + 1 banane + 15 g de beurre de cacahuète + 20 g de flocons d'avoine + 100 g de skyr + 1 c. à café de cacao.<br><b>≈ 480 kcal · 26 g de protéines</b></p></div><div class="card"><h3>Fruits rouges</h3><p>150 g de skyr + 150 g de fruits rouges + 200 ml de lait entier + 1 c. à soupe de miel + 15 g de poudre d'amande.<br><b>≈ 420 kcal · 25 g de protéines</b></p></div><div class="card"><h3>Mangue-vanille</h3><p>150 g de mangue + 150 g de yaourt grec entier + 200 ml de lait entier + 20 g de flocons d'avoine + 1 c. à café de miel + vanille.<br><b>≈ 480 kcal · 22 g de protéines</b></p></div></div></div></section>
+
+<section class="block" id="nutriments">
+<div class="kicker">Comprendre</div>
+<h2 class="title">Macros et micronutriments</h2><div class="rule"></div>
+<p class="lead">Touche une carte pour la retourner. Et chaque jour, un nouveau quiz t'attend juste en dessous.</p>
+<div class="grid g3 flipgrid" style="grid-template-columns:repeat(3,1fr)">
+<label class="flip"><input type="checkbox" class="fx"><div class="in"><div class="f"><small>MACRO · 4 KCAL/G</small><b>Protéines</b><span style="font-size:13px;color:var(--muted)">Toucher pour découvrir</span></div><div class="b"><b>Le matériau de ton muscle.</b><br>Elles construisent, réparent et calent. Environ 30 à 40 g par repas : viande, poisson, œufs, skyr, tofu.</div></div></label>
+<label class="flip"><input type="checkbox" class="fx"><div class="in"><div class="f"><small>MACRO · 4 KCAL/G</small><b>Glucides</b><span style="font-size:13px;color:var(--muted)">Toucher pour découvrir</span></div><div class="b"><b>Ton carburant.</b><br>Ils donnent l'énergie pour tenir la journée et performer en séance. On privilégie avoine, riz, pommes de terre, fruits.</div></div></label>
+<label class="flip"><input type="checkbox" class="fx"><div class="in"><div class="f"><small>MACRO · 9 KCAL/G</small><b>Lipides</b><span style="font-size:13px;color:var(--muted)">Toucher pour découvrir</span></div><div class="b"><b>Tes hormones et ta peau.</b><br>Indispensables pour ton cycle et tes hormones. Huile d'olive, avocat, amandes, saumon : ce sont tes alliés pour monter les étapes.</div></div></label>
+<label class="flip"><input type="checkbox" class="fx"><div class="in"><div class="f"><small>MICRO</small><b>Fer</b><span style="font-size:13px;color:var(--muted)">Toucher pour découvrir</span></div><div class="b"><b>Contre la fatigue.</b><br>Viande rouge maigre, lentilles, épinards. Avec un fruit riche en vitamine C pour mieux l'absorber.</div></div></label>
+<label class="flip"><input type="checkbox" class="fx"><div class="in"><div class="f"><small>MICRO</small><b>Magnésium</b><span style="font-size:13px;color:var(--muted)">Toucher pour découvrir</span></div><div class="b"><b>Stress, crampes, sommeil.</b><br>Amandes, chocolat noir 85 %, légumes verts, céréales complètes, eau minérale riche en magnésium.</div></div></label>
+<label class="flip"><input type="checkbox" class="fx"><div class="in"><div class="f"><small>MICRO</small><b>Calcium · Vit. D</b><span style="font-size:13px;color:var(--muted)">Toucher pour découvrir</span></div><div class="b"><b>Os solides, muscle efficace.</b><br>Laitages, sardines, amandes. La vitamine D vient surtout du soleil : 15 min dehors entre deux cours, c'est précieux. Tes os en ont besoin.</div></div></label>
+<label class="flip"><input type="checkbox" class="fx"><div class="in"><div class="f"><small>MICRO</small><b>Oméga-3</b><span style="font-size:13px;color:var(--muted)">Toucher pour découvrir</span></div><div class="b"><b>Récupération et éclat.</b><br>Saumon, sardines, maquereau 2 fois par semaine, noix, graines de lin ou de chia.</div></div></label>
+<label class="flip"><input type="checkbox" class="fx"><div class="in"><div class="f"><small>MICRO</small><b>Vitamine C</b><span style="font-size:13px;color:var(--muted)">Toucher pour découvrir</span></div><div class="b"><b>Peau et immunité.</b><br>Kiwi, agrumes, poivron, fraises. Elle aide aussi la fabrication du collagène (la fibre qui garde ta peau ferme et tes articulations solides).</div></div></label>
+<label class="flip"><input type="checkbox" class="fx"><div class="in"><div class="f"><small>BONUS</small><b>Fibres</b><span style="font-size:13px;color:var(--muted)">Toucher pour découvrir</span></div><div class="b"><b>Bonnes, mais à doser.</b><br>Elles calent très vite : au début, garde-les en quantité modérée pour laisser de la place au reste de ton assiette.</div></div></label>
+</div>
+<div class="quiz" id="quiz"><div class="kicker" id="qn">Quiz du jour</div><div class="q" id="qq"></div><div class="opts" id="qo"></div><div class="fb" id="qf"></div><button class="nx" id="qnext" style="display:none">Question suivante</button></div>
+</section>
+
+<section class="block" id="graines"><div class="kicker">Tes boosters</div><h2 class="title">Graines, oléagineux et petits plus</h2><div class="rule"></div><p class="lead">Riches en bons gras, en protéines et en minéraux sous un tout petit volume : ce sont tes meilleurs alliés. Ajoute-en à un ou deux repas par jour, dans un yaourt, un porridge, une salade ou un smoothie.</p><div class="tw"><table><tr><th>Aliment</th><th>Portion</th><th>Repère</th><th>Pourquoi</th></tr><tr><td>Amandes</td><td>30 g</td><td>une petite poignée</td><td>Calcium, magnésium, vitamine E. Bonnes pour tes os.</td></tr><tr><td>Noix</td><td>30 g</td><td>6 à 8 cerneaux</td><td>Oméga-3 (des bons gras qui calment le corps).</td></tr><tr><td>Noix de cajou</td><td>30 g</td><td>une petite poignée</td><td>Douces et faciles à grignoter.</td></tr><tr><td>Beurre de cacahuète ou d'amande 100 %</td><td>15 à 30 g</td><td>1 à 2 c. à soupe</td><td>Dans le porridge, sur une tartine, dans un smoothie.</td></tr><tr><td>Poudre d'amande</td><td>15 g</td><td>1 c. à soupe</td><td>Invisible dans un yaourt ou un smoothie.</td></tr><tr><td>Graines de courge</td><td>15 g</td><td>1 c. à soupe bombée</td><td>Magnésium, zinc et fer.</td></tr><tr><td>Graines de chia</td><td>10 g</td><td>1 c. à soupe</td><td>Oméga-3 et calcium. À laisser gonfler dans le yaourt.</td></tr><tr><td>Graines de sésame</td><td>10 g</td><td>1 c. à soupe</td><td>Calcium. Sur un poke ou des légumes.</td></tr><tr><td>Chocolat noir</td><td>20 g</td><td>2 carrés</td><td>Magnésium, et un vrai plaisir.</td></tr><tr><td>Dattes</td><td>30 g</td><td>3 dattes</td><td>Énergie rapide avant la séance.</td></tr></table></div><div class="callout"><h3>Le sucre, sans culpabilité</h3><p>Le miel, le sirop d'érable, la confiture ou le chocolat ont leur place. Une cuillère de miel dans ton yaourt, c'est de l'énergie et du plaisir, et c'est très bien comme ça. Aucun aliment n'est interdit.</p></div></section>
+
+<section class="block" id="muesli">
+<div class="kicker">Petit-déjeuner et collation</div>
+<h2 class="title">Tes mueslis et granolas maison</h2><div class="rule"></div>
+<p class="lead">Un bocal prêt pour 2 à 3 semaines, qui t'apporte beaucoup d'énergie et de protéines sous un petit volume. Parfait pour ton petit-déjeuner, dans un yaourt, ou en collation à emporter en cours.</p>
+<div class="tabs" id="mutabs"></div>
+<div class="card" id="mucard" style="margin-top:14px"></div>
+<div class="card" style="margin-top:14px">
+<h3>Ta portion</h3>
+<p style="font-size:14px;color:var(--muted)">Fais glisser pour voir ce que contient ta portion. Repère : <b>50 g</b>, environ 5 cuillères à soupe.</p>
+<input type="range" id="mug" min="30" max="80" step="5" value="50" style="width:100%;accent-color:var(--wine)">
+<div class="grid g4 stats" style="margin-top:10px">
+<div class="stat"><b id="muk"></b><span>kcal</span></div>
+<div class="stat"><b id="mup"></b><span>Protéines</span></div>
+<div class="stat"><b id="muc"></b><span>Glucides</span></div>
+<div class="stat"><b id="mul"></b><span>Lipides</span></div>
+</div>
+<p id="mutot" style="font-size:14px;margin:12px 0 0"></p>
+</div>
+<div class="grid g2" style="margin-top:14px">
+<div class="card"><h3>Ton petit-déjeuner complet</h3><p>50 g de granola + 150 g de yaourt grec entier + 1 fruit + 1 c. à café de miel. Environ <b>450 kcal et 20 g de protéines</b> : un vrai petit-déjeuner de construction, dans un petit bol.</p></div>
+<div class="card"><h3>Les règles d'or</h3><p>Conserve-le dans un bocal en verre bien fermé, au sec. Dans ton compteur, onglet « Créer », crée une « recette » avec les ingrédients du bocal : tu n'auras plus qu'à entrer ta portion. Avec le compteur intégré, ajoute-le en aliment personnalisé grâce aux valeurs du curseur.</p></div>
+</div>
+<div class="callout"><h3>Pour varier les goûts</h3><p>Cannelle, vanille en poudre, zeste d'orange, cacao non sucré, gingembre, cardamome : ils donnent du goût sans une calorie. Tu peux ajouter des fruits secs (raisins, abricots, dattes), des pépites de chocolat ou un peu plus de miel : c'est de l'énergie en plus, sous un petit volume.</p></div>
+</section>
+<script>
+(function(){
+function $(x){return document.querySelector(x)}
+var MU=[
+{n:"Classique",t:"Muesli classique amandes et abricots",i:["300 g de flocons d'avoine","60 g d'amandes concassées","40 g de graines de courge","30 g de graines de lin","40 g d'abricots secs coupés en petits dés","1 c. à café de cannelle"],s:"Mélange tout dans un grand saladier, puis verse dans un bocal. C'est prêt.",b:470,k:412,p:15.3,c:43.8,l:17.5,w:"Le plus simple et le plus complet : idéal pour commencer."},
+{n:"Choco-noisette",t:"Muesli chocolat et noisettes",i:["300 g de flocons d'avoine","50 g de noisettes concassées","30 g de chocolat noir 85 % en éclats","30 g de graines de chia","20 g de cacao en poudre non sucré"],s:"Mélange l'avoine et le cacao en premier pour bien l'enrober, puis ajoute le reste.",b:430,k:424,p:14,c:43.8,l:18.5,w:"Ton anti-envie de sucré : le goût du chocolat, sans le pic de sucre."},
+{n:"Fruits rouges et coco",t:"Muesli fruits rouges et coco",i:["300 g de flocons d'avoine","40 g de noix de coco râpée","40 g d'amandes effilées","30 g de graines de tournesol","20 g de fruits rouges lyophilisés (rayon fruits secs)","Zeste d'un citron vert (facultatif)"],s:"Mélange tout. Les fruits lyophilisés gardent leur croquant si le bocal est bien fermé.",b:430,k:431,p:13.7,c:46,l:19.2,w:"Frais et fruité, parfait avec un skyr nature."},
+{n:"Granola protéiné",t:"Granola protéiné croustillant (au four)",i:["250 g de flocons d'avoine","60 g de whey vanille (ou nature)","2 blancs d'œufs","40 g d'amandes concassées","30 g de graines de courge","20 g de miel (1 c. à soupe)","1 c. à café de cannelle"],s:"Four à 160 °C. Mélange tous les ingrédients secs, puis ajoute les blancs d'œufs et le miel, et mélange jusqu'à ce que tout soit humide. Étale sur une plaque avec du papier cuisson. Cuis 20 à 25 min en mélangeant à mi-cuisson. Laisse refroidir complètement avant de mettre en bocal : c'est là qu'il devient croustillant.",b:410,k:402,p:26,c:41.7,l:12.8,w:"Le plus protéiné : presque deux fois plus de protéines que les autres."},{n:"Granola cacao-noisette",t:"Granola cacao et noisettes (au four)",i:["250 g de flocons d'avoine", "40 g de whey chocolat (ou vanille)", "2 blancs d'œufs", "40 g de noisettes concassées", "20 g de cacao en poudre non sucré", "20 g de miel (1 c. à soupe)", "1 pincée de sel"],s:"Four à 160 °C. Mélange l'avoine, la whey et le cacao, puis ajoute les noisettes, les blancs d'œufs et le miel, jusqu'à ce que tout soit humide. Étale sur une plaque avec du papier cuisson et cuis 20 à 25 min en mélangeant à mi-cuisson. Laisse refroidir complètement avant de mettre en bocal : c'est là qu'il devient croustillant.",b:380,k:395,p:21.3,c:45.5,l:12.8,w:"Le goût d'une pâte à tartiner, avec des protéines en plus."},{n:"Granola pomme-cannelle",t:"Granola pomme, cannelle et noix (au four)",i:["250 g de flocons d'avoine", "150 g de compote de pommes sans sucre ajouté", "40 g de noix concassées", "30 g de graines de courge", "20 g de raisins secs", "2 c. à café de cannelle"],s:"Four à 160 °C. Mélange l'avoine, la cannelle et la compote, puis ajoute les noix et les graines. Garde les raisins secs pour la fin. Étale sur une plaque avec du papier cuisson et cuis 20 à 25 min en mélangeant à mi-cuisson. Ajoute les raisins à la sortie du four, puis laisse refroidir complètement avant de mettre en bocal : c'est là qu'il devient croustillant.",b:370,k:406,p:13.1,c:49.8,l:15.6,w:"Sucré uniquement par la pomme : le goût d'une tarte, sans sucre ajouté."},{n:"Granola cacahuète",t:"Granola beurre de cacahuète (au four)",i:["250 g de flocons d'avoine", "50 g de beurre de cacahuète 100 % (sans sucre ajouté)", "40 g de whey vanille (ou nature)", "2 blancs d'œufs", "30 g de graines de tournesol", "20 g de miel (1 c. à soupe)"],s:"Four à 160 °C. Fais tiédir 20 secondes le beurre de cacahuète avec le miel pour le rendre liquide. Mélange avec l'avoine, la whey et les graines, puis ajoute les blancs d'œufs. Étale sur une plaque avec du papier cuisson et cuis 20 à 25 min en mélangeant à mi-cuisson. Laisse refroidir complètement avant de mettre en bocal : c'est là qu'il devient croustillant.",b:400,k:411,p:22.5,c:44.3,l:15.1,w:"Gourmand et très rassasiant : parfait en collation avant la séance."},{n:"Granola coco-amande",t:"Granola coco, amande et vanille (au four)",i:["250 g de flocons d'avoine", "30 g de noix de coco râpée", "40 g d'amandes effilées", "15 g de graines de lin", "2 blancs d'œufs", "20 g de miel (1 c. à soupe)", "1 c. à café d'extrait de vanille"],s:"Four à 160 °C. Mélange les blancs d'œufs, le miel et la vanille, puis verse sur l'avoine, la coco, les amandes et le lin, et mélange bien. Étale sur une plaque avec du papier cuisson et cuis 18 à 22 min (la coco dore vite) en mélangeant à mi-cuisson. Laisse refroidir complètement avant de mettre en bocal : c'est là qu'il devient croustillant.",b:370,k:413,p:14.3,c:46.1,l:17.1,w:"Doux et parfumé, comme un dessert des îles."}],cur=0;
+function f(x){return (Math.round(x*10)/10).toString().replace('.',',')}
+function draw(){var m=MU[cur],h='<div class="dayhead"><h3>'+m.t+'</h3><span class="tag">≈ '+Math.round(m.k*0.4)+' kcal / 40 g</span></div><p style="font-size:14px;color:var(--muted);margin:0 0 10px">'+m.w+'</p><h4 style="margin:10px 0 6px">Pour un bocal d\'environ '+m.b+' g (≈ '+Math.round(m.b/40)+' portions)</h4>';
+m.i.forEach(function(x){h+='<div class="food"><i class="dot g"></i><span class="n">'+x+'</span></div>'});
+h+='<h4 style="margin:14px 0 6px">Préparation</h4><p style="font-size:15px">'+m.s+'</p>';$('#mucard').innerHTML=h;
+document.querySelectorAll('#mutabs button').forEach(function(b,i){b.classList.toggle('on',i==cur)});por()}
+function por(){var m=MU[cur],g=+$('#mug').value;$('#muk').textContent=Math.round(m.k*g/100);$('#mup').textContent=f(m.p*g/100)+' g';$('#muc').textContent=f(m.c*g/100)+' g';$('#mul').textContent=f(m.l*g/100)+' g';
+$('#mutot').innerHTML='Avec 170 g de skyr et 1 pomme, ton petit-déjeuner fait environ <b>'+Math.round(m.k*g/100+107+80)+' kcal</b> et <b>'+f(m.p*g/100+18.7+0.4)+' g de protéines</b>.'+(g>45?' <span style="color:#c0392b;font-weight:800">Au-delà de 45 g, ça devient un vrai repas : garde 40 g.</span>':'')}
+var t=$('#mutabs');MU.forEach(function(m,i){var b=document.createElement('button');b.textContent=m.n;b.onclick=function(){cur=i;draw()};t.appendChild(b)});
+$('#mug').oninput=por;draw();
+})();
+</script><section class="block" id="guide">
+<div class="kicker">Pour tout comprendre</div>
+<h2 class="title">Ce que tu mets dans ton assiette</h2><div class="rule"></div>
+<div class="tabs" data-group="guide"><button class="on" data-p="x1">Protéines</button><button data-p="x2">Glucides</button><button data-p="x3">Légumes et fibres</button><button data-p="x4">Lipides</button><button data-p="x5">Vitamines</button><button data-p="x6">Anti-inflammatoires</button></div>
+<div class="panel on" id="x1"><div class="card"><h3>Les protéines, ton muscle</h3><p>Ce sont les briques de ton corps : muscles, peau, cheveux, ongles, hormones. La séance donne le signal, les protéines construisent. Environ 90 g par jour, soit 20 g à chacun de tes 5 repas.</p></div>
+<div class="scale" style="margin-top:12px">
+<div class="food"><i class="dot g"></i><span class="n">Blanc de poulet ou dinde · 100 g cru</span><span class="v">≈ 23 g</span></div>
+<div class="food"><i class="dot g"></i><span class="n">Cabillaud, colin · 100 g cru</span><span class="v">≈ 18 g</span></div>
+<div class="food"><i class="dot g"></i><span class="n">Steak haché 5 % · 100 g cru</span><span class="v">≈ 21 g</span></div>
+<div class="food"><i class="dot g"></i><span class="n">Skyr · 150 g</span><span class="v">≈ 15 g</span></div>
+<div class="food"><i class="dot g"></i><span class="n">Œuf · 1 entier</span><span class="v">≈ 6 g</span></div>
+<div class="food"><i class="dot o"></i><span class="n">Lentilles · 100 g crues</span><span class="v">≈ 24 g</span></div>
+<div class="food"><i class="dot o"></i><span class="n">Tofu · 100 g</span><span class="v">≈ 12 g</span></div>
+</div></div>
+<div class="panel" id="x2"><div class="card"><h3>Les glucides, ton énergie</h3><p>C'est le carburant préféré de ton cerveau et de tes muscles : pour tes cours, tes séances et ton humeur. Pain, riz, pâtes, pommes de terre, flocons d'avoine, fruits, et aussi un dessert de temps en temps. Ce sont eux qui augmentent d'une étape à l'autre.</p></div></div>
+<div class="panel" id="x3"><div class="card"><h3>Les légumes et les fibres, avec douceur</h3><p>Les fibres sont la partie des végétaux que l'on ne digère pas. Elles sont bonnes pour l'intestin, mais elles gonflent dans l'estomac et calent très vite. Au début, on les garde en quantité modérée, plutôt cuites, pour qu'il te reste de la place pour le reste du repas.</p></div>
+<div class="scale" style="margin-top:12px">
+<div class="food"><i class="dot g"></i><span class="n">Graines de chia · 15 g</span><span class="v">≈ 5 g</span></div>
+<div class="food"><i class="dot g"></i><span class="n">Lentilles, pois chiches · 100 g cuits</span><span class="v">≈ 7 g</span></div>
+<div class="food"><i class="dot g"></i><span class="n">Framboises · 125 g</span><span class="v">≈ 8 g</span></div>
+<div class="food"><i class="dot g"></i><span class="n">Flocons d'avoine · 60 g</span><span class="v">≈ 6 g</span></div>
+<div class="food"><i class="dot g"></i><span class="n">Brocoli · 200 g</span><span class="v">≈ 5 g</span></div>
+<div class="food"><i class="dot g"></i><span class="n">Poire avec la peau · 1</span><span class="v">≈ 5 g</span></div>
+<div class="food"><i class="dot o"></i><span class="n">Pain complet · 2 tranches</span><span class="v">≈ 4 g</span></div>
+</div></div>
+<div class="panel" id="x4"><div class="card"><h3>Les lipides, tes hormones</h3><p>Les bonnes graisses fabriquent tes hormones, règlent ton cycle, protègent tes os et gardent ta peau souple. Et elles apportent beaucoup d'énergie sous un tout petit volume : c'est l'outil idéal pour monter tes étapes sans te remplir. Huile d'olive, avocat, oléagineux, poisson gras, laitages entiers.</p></div></div>
+<div class="panel" id="x5"><div class="tw"><table>
+<tr><th>Vitamine</th><th>À quoi elle sert</th><th>Où la trouver</th></tr>
+<tr><td>A</td><td>Peau, vue, immunité</td><td>Carotte, patate douce, épinards, œuf</td></tr>
+<tr><td>B (B6, B9, B12)</td><td>Énergie, nerfs, anti-fatigue</td><td>Viandes, poisson, œufs, légumes verts, légumineuses, céréales complètes</td></tr>
+<tr><td>C</td><td>Collagène, immunité, absorption du fer</td><td>Kiwi, poivron, agrumes, fraises, brocoli</td></tr>
+<tr><td>D</td><td>Os, muscle, moral</td><td>Soleil, sardines, saumon, maquereau, jaune d'œuf</td></tr>
+<tr><td>E</td><td>Antioxydant, éclat de la peau</td><td>Amandes, noisettes, huile de colza, avocat</td></tr>
+<tr><td>K</td><td>Coagulation, os</td><td>Épinards, brocoli, chou, salade verte</td></tr>
+</table></div>
+<div class="callout"><h3>La règle simple</h3><p>Mets au moins trois couleurs de fruits et légumes dans ta journée. Chaque couleur apporte des vitamines différentes.</p></div></div>
+<div class="panel" id="x6"><div class="card"><h3>Les meilleurs anti-inflammatoires</h3><p>Une inflammation discrète gêne la récupération après la séance et fatigue le corps. Ces aliments aident ton corps à la calmer :</p></div>
+<div class="grid g2" style="margin-top:12px">
+<div class="card"><h3>Poissons gras</h3><p>Saumon, sardines, maquereau : 2 fois par semaine pour les oméga-3.</p></div>
+<div class="card"><h3>Fruits rouges</h3><p>Myrtilles, framboises, mûres : très riches en antioxydants.</p></div>
+<div class="card"><h3>Curcuma et gingembre</h3><p>Le curcuma avec une pincée de poivre noir et un peu de gras pour être bien absorbé.</p></div>
+<div class="card"><h3>Légumes verts</h3><p>Brocoli, épinards, chou kale, roquette.</p></div>
+<div class="card"><h3>Huile d'olive vierge extra</h3><p>À froid sur les salades et les légumes.</p></div>
+<div class="card"><h3>Noix, lin, chia</h3><p>Oméga-3 végétaux, une petite poignée par jour.</p></div>
+<div class="card"><h3>Thé vert, cacao 85 %</h3><p>Riches en polyphénols, en petite quantité.</p></div>
+<div class="card"><h3>À limiter</h3><p>Sucres ajoutés, alcool, fritures, charcuterie, produits ultra-transformés.</p></div>
+</div></div>
+</section>
+
+<section class="block" id="courses">
+<div class="kicker">Organisation</div>
+<h2 class="title">Ta liste de courses</h2><div class="rule"></div>
+<p class="lead">Une base qui ne change pas, pour que tes courses restent simples, et quelques produits qui tournent chaque semaine pour ne jamais te lasser. Tes cases cochées restent enregistrées.</p>
+<div class="tabs" data-group="shop"><button class="on" data-p="s0">Base fixe</button><button data-p="s1">Semaine A</button><button data-p="s2">Semaine B</button><button data-p="s3">Semaine C</button><button data-p="s4">Semaine D</button></div>
+<div id="shopwrap"></div>
+<button class="swap" id="resetshop" style="margin-top:14px">Tout décocher pour la semaine prochaine</button>
+</section>
+
+<section class="block" id="compteur">
+<div class="kicker">Au quotidien</div>
+<h2 class="title">Mon compteur</h2><div class="rule"></div>
+<p class="lead">Un outil pour t'aider à voir que tu manges assez, pas pour te surveiller. Tu l'utilises seulement si ça t'aide, quelques jours avant une séance par exemple, et on le regarde ensemble. Le but n'est jamais de « rester en dessous » : c'est d'atteindre ton étape. Tout reste sur ton téléphone.</p>
+
+<div class="card cc">
+<div class="ccnav"><button id="ccprev" aria-label="Jour précédent">‹</button><label class="k2date"><b id="ccdate"></b><input type="date" id="ccpickdate"></label><button id="ccnext" aria-label="Jour suivant">›</button></div>
+<div class="ccsum">
+<div class="ring"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" class="rbg"/><circle cx="60" cy="60" r="52" class="rfg" id="ccring"/></svg><div class="rtxt"><b id="cceat">0</b><span id="ccleft">restantes</span></div></div>
+<div class="ccmac">
+<div class="bar"><label><span>Protéines</span><span id="ccp"></span></label><div class="track"><div class="fill" id="ccpf" style="background:var(--wine)"></div></div></div>
+<div class="bar"><label><span>Glucides</span><span id="ccg"></span></label><div class="track"><div class="fill" id="ccgf" style="background:var(--gold)"></div></div></div>
+<div class="bar"><label><span>Lipides</span><span id="ccl"></span></label><div class="track"><div class="fill" id="cclf" style="background:var(--sage)"></div></div></div>
+<select id="ccgoal"><option value="1600">Étape 1 · 1 600 kcal</option><option value="1800">Étape 2 · 1 800 kcal</option><option value="1950">Étape 3 · 1 950 kcal</option><option value="2100">Étape 4 · 2 100 kcal</option><option value="2250">Étape 5 · 2 250 kcal</option></select>
+<p class="k2pal" id="k2pal"></p>
+</div></div>
+<div class="k2water"><div class="k2wh"><b>Eau</b><span id="k2wt"></span></div><div class="k2glasses" id="k2glasses"></div></div>
+</div>
+
+<div class="card cc" style="margin-top:14px">
+<h3>Ajouter</h3>
+<div class="k2meals" id="ccmeal"></div>
+<div class="k2tabs" id="k2tabs"><button data-t="s" class="on">Rechercher</button><button data-t="b">Scanner</button><button data-t="ph">Photo</button><button data-t="a">Assiette rapide</button><button data-t="c">Créer</button></div>
+
+<div class="k2pane on" data-p="s">
+<div class="k2search"><input id="ccq" class="ccin" placeholder="Rechercher : skyr, poulet, riz…" autocomplete="off" enterkeyhint="search"><button class="k2mic" id="k2mic" aria-label="Dicter">Dicter</button></div>
+<div class="k2chips" id="k2chips" style="flex-wrap:wrap"><button data-c="r" class="on">Récents</button><button data-c="f">Favoris</button><button data-c="m">Mes repas</button><button data-c="re">Mes recettes</button><button data-c="mine">Mes aliments</button></div>
+<div id="ccres"></div>
+<button class="swap" id="k2online" style="display:none;margin-top:10px">Chercher dans les produits du commerce</button>
+<div id="k2onres"></div>
+</div>
+
+<div class="k2pane" data-p="b">
+<p class="k2help">Vise le code-barres du produit : la fiche s'ouvre toute seule avec ses valeurs.</p>
+<div class="ccrow"><button class="donebtn" id="k2cam" style="margin:0">Ouvrir la caméra</button><label class="swap" style="display:inline-block;margin:0">Depuis une photo<input type="file" id="k2barimg" accept="image/*" style="display:none"></label></div>
+<div class="k2vid" id="k2vidbox" style="display:none"><video id="k2vid" playsinline muted></video><div class="k2aim"></div><button class="swap" id="k2camstop">Fermer la caméra</button></div>
+<div class="ccrow" style="margin-top:10px"><input id="ccbar" class="ccin" inputmode="numeric" placeholder="Ou tape les chiffres du code-barres"><button class="swap" id="ccbarb">Chercher</button></div>
+</div>
+
+<div class="k2pane" data-p="ph">
+<div class="k2ph">
+<div><h4>Photo de mon assiette</h4><p class="k2help">Elle s'ajoute au repas choisi, pour garder une trace et me la montrer. Ensuite, note ce qu'il y a dedans avec « Assiette rapide » ou la recherche.</p><label class="donebtn k2lbl">Prendre mon assiette en photo<input type="file" id="k2plate" accept="image/*" capture="environment" style="display:none"></label></div>
+<div><h4>Photo d'une étiquette</h4><p class="k2help">Prends le tableau des valeurs nutritionnelles bien à plat : les chiffres pour 100 g sont lus et remplis pour toi. Tu vérifies, tu enregistres.</p><label class="donebtn k2lbl">Lire une étiquette<input type="file" id="k2label" accept="image/*" capture="environment" style="display:none"></label><p class="k2help" id="k2ocrst"></p></div>
+</div>
+</div>
+
+<div class="k2pane" data-p="a">
+<p class="k2help">Pas de balance sous la main ? Ta main sert de mesure. Choisis ce qu'il y a dans ton assiette et combien de mains.</p>
+<div id="k2plateq"></div>
+<button class="donebtn" id="k2plateadd">Ajouter mon assiette</button>
+</div>
+
+<div class="k2pane" data-p="c">
+<h4>Créer un aliment</h4>
+<input id="cnn" class="ccin" placeholder="Nom de l'aliment ou du produit">
+<div class="ccrow4"><input id="cnk" class="ccin" inputmode="decimal" placeholder="kcal / 100 g"><input id="cnp" class="ccin" inputmode="decimal" placeholder="Protéines"><input id="cng" class="ccin" inputmode="decimal" placeholder="Glucides"><input id="cnl" class="ccin" inputmode="decimal" placeholder="Lipides"></div>
+<input id="cnu" class="ccin" inputmode="decimal" placeholder="Poids d'une portion en g (facultatif)">
+<button class="donebtn" id="cnadd">Enregistrer cet aliment</button>
+<p class="k2help" style="margin-top:14px"><b>Une recette ou un repas que tu refais souvent ?</b> Note ses ingrédients dans un repas du journal, puis touche « Recette » ou « Repas type » sous ce repas.</p>
+</div>
+
+<div id="ccpick" style="display:none">
+<div class="ccsel"><b id="ccname"></b><span id="ccinfo"></span></div>
+<div class="ccrow"><input id="ccgr" class="ccin" inputmode="decimal" placeholder="Quantité"><select id="ccunit" class="ccin k2unit"></select></div>
+<p class="k2prev" id="k2prev"></p>
+<div class="ccrow"><button class="donebtn" id="ccadd" style="margin:0">Ajouter</button><button class="swap" id="ccfav">☆ Favori</button><button class="swap" id="k2cancel">Annuler</button></div>
+</div>
+</div>
+
+<div class="card cc" style="margin-top:14px" id="ccdays"></div>
+
+<div class="card cc k2coach" style="margin-top:14px" id="k2coach"></div>
+
+<div class="card cc" style="margin-top:14px">
+<h3>Mon ressenti du jour</h3>
+<div class="k2feel"><span>Mon ventre</span><div class="k2chips k2opt" id="k2belly"><button data-v="0">Plat</button><button data-v="1">Un peu gonflé</button><button data-v="2">Gonflé</button><button data-v="3">Très gonflé</button></div></div>
+<div class="k2feel"><span>Mon énergie</span><div class="k2chips k2opt" id="k2energy"><button data-v="0">Basse</button><button data-v="1">Correcte</button><button data-v="2">Top</button></div></div>
+<div class="k2feel"><span>Ma faim</span><div class="k2chips k2opt" id="k2hunger"><button data-v="0">Calme</button><button data-v="1">Présente</button><button data-v="2">Forte</button></div></div>
+<div class="ccrow" style="margin-top:10px"><input id="k2steps" class="ccin" inputmode="numeric" placeholder="Mes pas du jour"><input id="k2sleep" class="ccin" inputmode="decimal" placeholder="Mon sommeil (h)"></div>
+<textarea id="k2note" class="ccin" rows="2" placeholder="Une note pour ta coach : séance, écart, ressenti…"></textarea>
+</div>
+
+<div class="card cc" style="margin-top:14px">
+<div class="row" style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap"><h3 style="margin:0">Mon bilan</h3><div class="seg" id="k2per"><button data-v="7" class="on">7 jours</button><button data-v="30">30 jours</button></div></div>
+<div class="ccweek" id="ccweek"></div>
+<div class="k2stats" id="k2stats"></div>
+<p style="font-size:14px;margin-top:8px" id="ccavg"></p>
+<div id="k2gal"></div>
+<div class="ccrow"><button class="donebtn" id="k2share" style="margin:0">Envoyer mon bilan à ma coach</button></div>
+</div>
+
+<div class="card cc" style="margin-top:14px;display:none">
+<h3>Mon poids et mon tour de taille</h3>
+<p class="k2help">Une fois par semaine, le matin à jeun. C'est la courbe qui compte, pas un chiffre isolé.</p>
+<div class="ccrow"><input id="k2kg" class="ccin" inputmode="decimal" placeholder="Poids (kg)"><input id="k2tt" class="ccin" inputmode="decimal" placeholder="Tour de taille (cm)"><button class="swap" id="k2wadd" style="margin:0">Noter</button></div>
+<div id="k2wchart"></div>
+</div>
+
+<div class="card cc" style="margin-top:14px"><h3>Sauvegarde</h3><p style="font-size:14px;color:var(--muted)">Tout est enregistré sur ton téléphone. Avant de changer de téléphone ou de vider ton navigateur, télécharge ta sauvegarde (photos comprises) et réimporte-la ici.</p><div class="ccrow"><button class="swap" id="ccexp">Télécharger ma sauvegarde</button><label class="swap" style="display:inline-block">Importer<input type="file" id="ccimp" accept=".json" style="display:none"></label><button class="swap" id="k2csv">Exporter en tableau</button></div></div>
+</section>
+
+<section class="block" id="menus">
+<div class="kicker">Au jour le jour</div>
+<h2 class="title">Menus · 31 jours selon ton humeur</h2><div class="rule"></div>
+<p class="lead">Choisis ton jour, puis ton humeur du moment. Ces menus correspondent à environ 2 000 kcal, tes étapes 3 et 4 : avant, prends des portions un peu plus petites. Ajoute ta collation du matin (un yaourt, une poignée d'amandes ou un verre de lait). Tu peux aussi échanger un repas si quelque chose ne te tente pas.</p>
+<div style="display:flex;justify-content:space-between;font-size:13px;font-weight:800;color:var(--wine)"><span>Ton avancée</span><span id="ptxt">0 / 31</span></div>
+<div class="progress"><div id="pbar"></div></div>
+<div class="moods" id="moods">
+<div class="mood on" data-m="0"><i>☀</i>Énergique</div>
+<div class="mood" data-m="1"><i>⏱</i>Pressée</div>
+<div class="mood" data-m="2"><i>♨</i>Réconfort</div>
+<div class="mood" data-m="3"><i>❀</i>Gourmande</div>
+</div>
+<div class="cal" id="cal"></div>
+<div class="menu-card" id="menu"></div>
+<div class="callout"><h3>Et après le jour 31 ?</h3><p>Tu recommences le cycle de 31 jours en suivant l'étape en cours (voir « Tes 9 mois »). Les humeurs et les échanges de repas t'offrent plus de 500 combinaisons différentes. On fait le point chaque mois au coaching et on fait évoluer les menus avec les saisons.</p></div>
+</section>
+
+<section class="block">
+<div class="reset">
+<div class="kicker">Chaque semaine</div>
+<h2 class="title">Tes repas plaisir</h2>
+<div class="grid g2" style="margin-top:12px"><div class="card"><h3>Aucun aliment interdit</h3><p>Pizza, burger, sushis, pâtisserie, glace : tout a sa place dans ton alimentation. Ils t'apportent de l'énergie et du plaisir, deux choses dont ton corps a besoin.</p></div><div class="card"><h3>Au moins un par semaine</h3><p>Un repas ou un dessert qui te fait vraiment envie, avec des amis ou en famille. C'est un vrai moment du programme, pas un écart.</p></div><div class="card"><h3>Zéro culpabilité</h3><p>Tu le savoures, c'est tout. Il fait partie de ta reconstruction.</p></div><div class="card"><h3>Zéro compensation</h3><p>Pas de repas sauté, pas de séance en plus pour « rattraper ». Tu reprends simplement au repas suivant.</p></div></div>
+</div>>
+</div>
+</section>
+
+
+
+<section class="block">
+<div class="kicker">Ton suivi</div>
+<h2 class="title">Ton bilan</h2><div class="rule"></div>
+<p class="lead">Pas de balance à la maison : on regarde ton évolution ensemble, toutes les 4 semaines, avec la Tanita. Entre deux, ce qui compte, c'est comment tu te sens.</p>
+<div class="card" id="bilan">
+<label class="check"><input type="checkbox" data-s="b1"><span>5 repas par jour, la plupart des jours de la semaine</span></label>
+<label class="check"><input type="checkbox" data-s="b2"><span>Mesure Tanita toutes les 4 semaines, ensemble en séance</span></label>
+<label class="check"><input type="checkbox" data-s="b3"><span>Des protéines à chaque repas</span></label>
+<label class="check"><input type="checkbox" data-s="b4"><span>Énergie, humeur, sommeil et digestion notés de 1 à 10</span></label>
+<label class="check"><input type="checkbox" data-s="b5"><span>Au moins 7 h de sommeil la plupart des nuits</span></label>
+<label class="check"><input type="checkbox" data-s="b6"><span>Ta séance de la semaine et ton Pilates, sans en rajouter</span></label>
+</div>
+</section>
+
+<section class="block" id="complements">
+<div class="kicker">En bonus, jamais à la place</div>
+<h2 class="title">Les compléments alimentaires</h2><div class="rule"></div>
+<p class="lead">Un complément ne remplace jamais un repas. Il <b>complète</b> une alimentation, un sommeil et des séances déjà en place. Voici ce qui peut vraiment t'aider, et ce qu'on évite.</p>
+<div class="grid g2">
+<div class="card" style="border:2px solid var(--wine)"><span class="tag">RECOMMANDÉ</span><h3 style="margin-top:8px">La créatine monohydrate</h3><p>C'est le complément le plus étudié au monde, et il est sûr. Elle aide ton muscle à être plus fort et à mieux récupérer : exactement ce qu'il faut pour construire tes jambes et tes fessiers. Elle aide aussi la concentration et la fatigue mentale.</p><p><b>Dose :</b> 3 à 5 g par jour, tous les jours (même sans séance), à n'importe quel moment, dans un verre d'eau ou ta collation. Pas besoin de « phase de charge ». Choisis-la pure, idéalement avec le label Creapure.</p><p style="background:var(--blush);border-radius:12px;padding:10px 12px;font-size:14px"><b>Bon à savoir :</b> la créatine fait entrer un peu d'eau dans le muscle, ce qui le rend plus plein. On en parle ensemble avant de commencer, et on la démarre seulement quand tes repas seront bien installés.</p></div>
+<div class="card"><span class="tag">PRATIQUE</span><h3 style="margin-top:8px">La whey (protéine en poudre)</h3><p>Ce n'est pas magique : c'est juste de la protéine de lait, pratique. Très utile quand manger est difficile : une dose dans un smoothie ou un verre de lait apporte environ 20 g de protéines, sans remplir l'estomac. Elle t'aide à atteindre tes 90 g par jour. Elle complète un repas, elle ne le remplace pas.</p></div>
+<div class="card"><span class="tag">SAISON</span><h3 style="margin-top:8px">La vitamine D</h3><p>D'octobre à mars, presque tout le monde en manque. Elle joue sur l'énergie, le moral, le muscle, et surtout sur tes os, une vraie priorité pour toi. Demande à ton médecin : il peut la doser par une prise de sang et te prescrire la bonne quantité.</p></div>
+<div class="card"><span class="tag">UTILE</span><h3 style="margin-top:8px">Le magnésium</h3><p>Stress des examens, fatigue, crampes, sommeil léger : il aide. Préfère le bisglycinate de magnésium, le soir. Commence par l'alimentation : amandes, chocolat noir 85 %, légumes verts.</p></div>
+<div class="card"><span class="tag">SI PEU DE POISSON</span><h3 style="margin-top:8px">Les oméga-3</h3><p>Si tu manges du poisson gras (saumon, sardines, maquereau) moins de deux fois par semaine, une capsule d'oméga-3 peut t'aider pour la récupération et l'inflammation.</p></div>
+<div class="card" style="border:2px solid #c0392b"><span class="tag" style="background:#f9dede;color:#8a2a3c">À ÉVITER</span><h3 style="margin-top:8px;color:#c0392b">Coupe-faim, « détox », brûleurs, boosters</h3><p>Tout ce qui coupe l'appétit, fait « dégonfler » ou « brûler » va à l'inverse de ton objectif. Même chose pour les « pre-workout » très caféinés : cœur qui s'emballe, sommeil abîmé et appétit coupé.</p></div>
+</div>
+<div class="callout"><h3>La règle</h3><p>On en parle ensemble avant d'en prendre un. Si tu as un traitement, un problème de santé ou un doute, demande l'avis de ton médecin ou de ton pharmacien. Et l'ordre des priorités ne change jamais : l'assiette, l'eau, le sommeil, les séances, puis seulement les compléments.</p></div>
+</section><section class="partner">
+<h2>Partenariat Bravo Fit Studio</h2>
+<p>Pour la créatine, la whey ou les autres compléments, tu peux passer directement par moi ou commander sur KISS Nutrition avec le code promo :</p>
+<div class="code" id="code">CHANTAL</div>
+<p style="font-size:14px;opacity:.9">Aucun complément n'est obligatoire. L'alimentation, le sommeil et la régularité passent toujours en premier.</p>
+</section>
+<p class="note">Document d'accompagnement de coaching. Il ne remplace pas un avis médical individualisé. En cas de pathologie, de traitement, de grossesse ou de symptôme persistant, demande conseil à un professionnel de santé.</p>
+</main>
+<div class="foot">BRAVO FIT STUDIO · DOSSIER PERSONNALISÉ POUR CALY · SUIVI 9 MOIS</div>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+(function(){
+var mem={};
+var store={get:function(k,d){try{var v=localStorage.getItem('bf_caly_'+k);return v?JSON.parse(v):(k in mem?mem[k]:d)}catch(e){return k in mem?mem[k]:d}},set:function(k,v){mem[k]=v;try{localStorage.setItem('bf_caly_'+k,JSON.stringify(v))}catch(e){}}};
+function $(s){return document.querySelector(s)}
+function cnt(o){return Object.keys(o).filter(function(k){return o[k]}).length}
+function toast(t){var el=$('#toast');el.textContent=t;el.classList.add('show');clearTimeout(el._t);el._t=setTimeout(function(){el.classList.remove('show')},2200)}
+
+var L={e1:{k:1600,p:90,l:53,g:191,t:"Étape 1 · Semaines 1 et 2 · démarrage en douceur."},e2:{k:1800,p:90,l:60,g:225,t:"Étape 2 · Semaines 3 et 4 · ton maintien."},e3:{k:1950,p:90,l:65,g:251,t:"Étape 3 · Semaines 5 à 7 · début de la prise de muscle."},e4:{k:2100,p:90,l:70,g:278,t:"Étape 4 · Semaines 8 à 12 · prise de muscle."},e5:{k:2250,p:90,l:75,g:304,t:"Étape 5 · Seulement si le poids ne bouge plus 3 semaines."}};
+function sim(k){var x=L[k];$('#kcal').textContent=x.k.toLocaleString('fr-FR');
+$('#bp').textContent=x.p+' g · '+Math.round(x.p*4/x.k*100)+' %';$('#fp').style.width=(x.p*4/x.k*100)+'%';
+$('#bg').textContent=x.g+' g · '+Math.round(x.g*4/x.k*100)+' %';$('#fg').style.width=(x.g*4/x.k*100)+'%';
+$('#bl').textContent=x.l+' g · '+Math.round(x.l*9/x.k*100)+' %';$('#fl').style.width=(x.l*9/x.k*100)+'%';
+$('#simtxt').textContent=x.t}
+document.querySelectorAll('#seg button').forEach(function(b){b.onclick=function(){document.querySelectorAll('#seg button').forEach(function(o){o.classList.remove('on')});b.classList.add('on');sim(b.dataset.k)}});
+sim('e1');
+
+var R=[
+{t:"Jour 1",s:"Le premier pas",h:"Prépare ta collation de demain et mets-la dans ton sac ce soir.",m:[["7h30","Petit-déjeuner","150 g de yaourt grec entier + 30 g de granola + 1 c. à café de miel"],["10h30","Collation","1 verre de lait entier (200 ml) + 15 g d'amandes"],["12h30","Déjeuner","100 g de poulet cru + 60 g de riz cru + carottes cuites + 1 c. à soupe d'huile d'olive"],["16h30","Goûter","Smoothie : 150 g de skyr + 1 banane + 150 ml de lait entier"],["19h30","Dîner","2 œufs + 40 g de pâtes crues + 15 g de parmesan + courgettes poêlées"]]},
+{t:"Jour 2",s:"Douceur",h:"Mange assise, sans écran qui te stresse, en prenant ton temps.",m:[["7h30","Petit-déjeuner","2 tartines de pain complet + 15 g de beurre de cacahuète + 1 banane"],["10h30","Collation","1 yaourt grec entier + 1 poignée de raisins secs"],["12h30","Déjeuner","1 pavé de saumon (100 g) + 150 g de pommes de terre + haricots verts + 1 c. à café d'huile"],["16h30","Goûter","1 verre de lait entier + 2 carrés de chocolat noir + 1 galette de riz"],["19h30","Dîner","Omelette 2 œufs au fromage râpé + 1 tranche de pain + salade de tomates à l'huile d'olive"]]},
+{t:"Jour 3",s:"Énergie",h:"Après la séance, ton dîner est un vrai soin pour ton muscle.",m:[["7h30","Petit-déjeuner","Porridge : 40 g de flocons d'avoine + 200 ml de lait entier + 1 c. à café de miel + cannelle"],["10h30","Collation","1 compote + 1 portion de fromage (30 g)"],["12h30","Déjeuner","100 g de bœuf haché 5 % + 60 g de pâtes crues + sauce tomate + 10 g de parmesan"],["16h30","Goûter","Tartine de pain complet + avocat + 1 œuf dur"],["19h30","Dîner","100 g de cabillaud + 50 g de riz cru + épinards à la crème légère"]]},
+{t:"Jour 4",s:"Plaisir",h:"Choisis un repas qui te fait vraiment envie aujourd'hui.",m:[["7h30","Petit-déjeuner","150 g de fromage blanc entier + 30 g de granola + fruits rouges"],["10h30","Collation","1 barre de céréales + 1 verre de lait"],["12h30","Déjeuner","Wrap : 1 tortilla + 80 g de poulet + fromage frais + crudités + 1 c. à soupe de sauce"],["16h30","Goûter","Smoothie : 1 banane + 15 g de beurre de cacahuète + 200 ml de lait entier"],["19h30","Dîner","Pizza maison sur pâte fine : jambon de dinde, mozzarella, champignons + salade"]]},
+{t:"Jour 5",s:"Régularité",h:"Un rendez-vous avec toi-même à chaque repas, même sans faim.",m:[["7h30","Petit-déjeuner","2 œufs brouillés + 1 tartine de pain complet beurrée + 1 jus d'orange"],["10h30","Collation","1 yaourt grec entier + 15 g de noix"],["12h30","Déjeuner","1 steak de dinde (100 g) + 150 g de semoule cuite + ratatouille + 1 c. à café d'huile"],["16h30","Goûter","2 galettes de riz + 15 g de beurre d'amande + 1 pomme"],["19h30","Dîner","Velouté de légumes + 1 tartine de pain + 30 g de comté + 1 yaourt"]]},
+{t:"Jour 6",s:"Confiance",h:"Note une chose que ton corps a réussi cette semaine.",m:[["7h30","Petit-déjeuner","Pancakes : 1 œuf + 40 g de flocons d'avoine + 1 banane écrasée + 1 c. à café de miel"],["10h30","Collation","1 verre de lait entier + 1 petite poignée de noix de cajou"],["12h30","Déjeuner","Poke bowl : 60 g de riz cru + 80 g de saumon + avocat + edamame + sauce soja"],["16h30","Goûter","1 skyr + 1 c. à soupe de miel + 1 poignée de céréales"],["19h30","Dîner","Gratin de pâtes : 40 g de pâtes crues + 80 g de poulet + béchamel légère + fromage râpé"]]},
+{t:"Jour 7",s:"Bilan doux",h:"Prépare tranquillement ta semaine : collations, courses, boîtes repas.",m:[["7h30","Petit-déjeuner","2 tartines de pain complet + fromage frais + saumon fumé (40 g) + 1 kiwi"],["10h30","Collation","1 yaourt grec entier + 1 c. à café de miel"],["12h30","Déjeuner","Poulet rôti (100 g) + 150 g de pommes de terre rôties à l'huile d'olive + haricots verts"],["16h30","Goûter","Smoothie : 150 g de skyr + 150 g de fruits rouges + 150 ml de lait entier + 1 c. à café de miel"],["19h30","Dîner","Dahl de lentilles corail au lait de coco + 40 g de riz cru + 1 yaourt"]]}
+];
+var rDone=store.get('rdone',{}),rCur=0;
+function drawR(){var d=$('#rdays');d.innerHTML='';R.forEach(function(x,i){var b=document.createElement('button');b.className='dbtn'+(i==rCur?' on':'')+(rDone[i]?' done':'');b.innerHTML='<small>JOUR</small>'+(i+1);b.onclick=function(){rCur=i;drawR()};d.appendChild(b)});
+var x=R[rCur],h='<div class="dayhead"><h3>'+x.t+' · '+x.s+'</h3><span class="tag">≈ 1 600 kcal</span></div>';
+x.m.forEach(function(m){h+='<div class="meal"><div class="h">'+m[0]+'</div><div><b>'+m[1]+'</b><span>'+m[2]+'</span></div></div>'});
+h+='<div class="habit"><b>Défi du jour :</b> '+x.h+'</div><button class="donebtn'+(rDone[rCur]?' ok':'')+'" id="rbtn">'+(rDone[rCur]?'Journée validée ✓':'Je valide ma journée')+'</button>';
+$('#rday').innerHTML=h;
+$('#rbtn').onclick=function(){rDone[rCur]=!rDone[rCur];store.set('rdone',rDone);if(rDone[rCur]){toast(cnt(rDone)==7?'Démarrage terminé. Fière de toi, Caly.':'Bravo, une journée de plus');if(rCur<6)rCur++}drawR()}}
+drawR();
+
+var today=new Date().toDateString(),w=store.get('water',{d:today,n:0});if(w.d!=today)w={d:today,n:0};
+function drawW(){var c=$('#water');c.innerHTML='';for(var i=0;i<10;i++){(function(i){var g=document.createElement('div');g.className='glass'+(i<w.n?' full':'');g.onclick=function(){w.n=(w.n==i+1)?i:i+1;store.set('water',w);drawW();if(w.n==8)toast('2 L atteints, bravo')};c.appendChild(g)})(i)}
+$('#wtxt').textContent=(w.n*0.25).toLocaleString('fr-FR')+' L sur 2 L'}
+drawW();
+
+function tabs(group){var t=document.querySelector('.tabs[data-group="'+group+'"]');t.querySelectorAll('button').forEach(function(b){b.onclick=function(){t.querySelectorAll('button').forEach(function(o){o.classList.remove('on')});b.classList.add('on');t.parentNode.querySelectorAll('.panel').forEach(function(p){p.classList.toggle('on',p.id==b.dataset.p)})}})}
+tabs('food');tabs('guide');
+
+
+
+var START=Date.UTC(2026,10,4),NOW=new Date(),DN=Math.max(0,Math.floor((Date.UTC(NOW.getFullYear(),NOW.getMonth(),NOW.getDate())-START)/864e5));
+function sh(n,seed){var a=[],i,j,tmp,x=(seed*7919+13)%233280;for(i=0;i<n;i++)a.push(i);for(i=n-1;i>0;i--){x=(x*9301+49297)%233280;j=Math.floor(x/233280*(i+1));tmp=a[i];a[i]=a[j];a[j]=tmp}return a}
+var AF=["Je mérite de prendre soin de moi, chaque jour.", "Mon corps est mon allié, je le nourris.", "Chaque repas est un pas vers ma force.", "Je suis fière du chemin déjà parcouru.", "Je choisis la régularité plutôt que la perfection.", "Je deviens chaque jour un peu plus forte.", "Ma valeur ne dépend d'aucun chiffre.", "Je nourris mon corps avec douceur.", "J'ai le droit d'avancer à mon rythme.", "Je suis capable de grandes choses.", "Chaque bouchée compte, et je le sais.", "Je construis un corps solide, qui me porte.", "Je me parle avec douceur, comme à une amie.", "Mon énergie grandit jour après jour.", "Je tiens les promesses que je me fais.", "Manger, c'est me donner de la force.", "Mes jambes deviennent plus fortes à chaque séance.", "Aujourd'hui, je choisis ce qui me fait du bien.", "J'aime la femme que je suis en train de devenir.", "Mon corps me porte, je le remercie.", "Je suis la première personne à croire en moi.", "Un jour difficile ne m'arrête pas, je reprends avec calme.", "Je mérite de me sentir bien dans mon corps.", "Ma confiance grandit avec chaque effort.", "Je suis patiente avec moi-même.", "Je construis une santé qui va durer.", "Je prends ma place, avec force et douceur.", "Mes efforts d'aujourd'hui sont ma force de demain.", "Je mange, je bouge, je dors : je prends soin de moi.", "Je célèbre chaque victoire, même la plus petite.", "Je deviens solide, à l'intérieur comme à l'extérieur."];
+var ai=sh(AF.length,Math.floor(DN/AF.length)+99)[DN%AF.length];
+$('#affd').textContent='AFFIRMATION DU JOUR · JOUR '+(DN+1);$('#afft').textContent=AF[ai];
+var QB=["Combien de repas par jour dans ton programme ?|3|5|2|1|1|5 petits repas passent mieux que 3 gros.", "Pour construire du muscle, ton corps a besoin…|D'énergie et de protéines|De manger moins|De cardio seulement|De rien|0|La séance donne le signal, l'assiette construit.", "Tes protéines par jour ?|90 g|20 g|200 g|Aucune|0|Environ 20 g à chacun de tes 5 repas.", "Un smoothie peut-il remplacer un goûter ?|Non, jamais|Oui, c'est un vrai repas|Seulement le soir|Seulement l'été|1|Mixé, il passe beaucoup plus facilement qu'un repas solide.", "Quand boire de préférence ?|Pendant le repas, beaucoup|Entre les repas|Jamais|Seulement le soir|1|L'eau remplit l'estomac : bois surtout entre les repas.", "Une cuillère d'huile d'olive apporte environ…|10 kcal|90 kcal|300 kcal|0 kcal|1|Beaucoup d'énergie, sans augmenter le volume de l'assiette.", "Un gramme de lipides apporte…|4 kcal|9 kcal|2 kcal|0 kcal|1|9 kcal : c'est l'allié parfait pour monter tes étapes.", "Si une étape est trop difficile…|On abandonne|On reste dessus plus longtemps|On saute des repas|On double la séance|1|Chaque étape doit devenir facile avant la suivante.", "Si tu n'as pas faim à l'heure du repas…|Tu sautes le repas|Tu manges quand même un peu|Tu attends le lendemain|Tu bois un café|1|Les signaux de faim reviennent avec la régularité.", "Le gras dans ton corps sert à…|Rien|Tes hormones, ton cycle et tes os|Seulement à grossir|Faire du sport|1|Le gras n'est pas l'ennemi : il est indispensable.", "Ta priorité en séance ?|Le bas du corps|Seulement les bras|Le cardio|Rien|0|Fessiers, cuisses, jambes : c'est là que ta qualité musculaire peut le plus progresser.", "Les légumes au début, plutôt…|Crus et en énorme quantité|Cuits et en petite quantité|Jamais|En jus|1|Ils calent vite : on garde de la place pour le reste.", "La nicotine de la vape…|Ouvre l'appétit|Coupe l'appétit|Ne change rien|Fait grossir|1|Évite de vapoter juste avant et juste après un repas.", "Un repas plaisir, c'est…|Un écart|Un vrai moment du programme|Interdit|À compenser|1|Aucun aliment n'est interdit, et on ne compense jamais.", "Combien de fois te pèses-tu à la maison ?|Tous les jours|Jamais : on se mesure ensemble toutes les 4 semaines|Après chaque repas|Le soir|1|La Tanita en séance suffit.", "Le rythme de prise à viser ?|+0,2 à 0,4 kg par semaine|+3 kg par semaine|Le plus vite possible|Aucun|0|C'est le rythme qui construit surtout du muscle.", "Pour tes os, tu mises sur…|Calcium, vitamine D, protéines et musculation|Le café|Sauter des repas|Rien|0|Ils se renforcent avec l'assiette et la séance.", "Après la séance, ton corps a besoin…|D'un vrai repas|De rien|D'un café|D'eau seulement|0|Ne saute jamais le repas après la séance.", "Une poignée d'amandes (30 g), c'est environ…|20 kcal|180 kcal|500 kcal|0 kcal|1|Beaucoup d'énergie dans un petit volume.", "Le lait entier, comparé au lait écrémé…|Apporte plus d'énergie et de vitamines|Est interdit|Est identique|Est moins bon|0|Pour toi, entier, c'est mieux.", "Ton objectif à 9 mois ?|55 à 58 kg, plus forte|45 kg|Aucun|70 kg|0|Avec du muscle en plus, surtout sur les jambes.", "Qui t'accompagne côté santé ?|Personne|Ton médecin et un ou une diététicienne|Internet|Une appli|1|Un suivi santé à côté des séances, c'est important.", "Le Pilates t'aide surtout pour…|Le gainage et la posture|Courir plus vite|Rien|Le cardio|0|Un centre solide, une meilleure posture.", "Un jour où tu as moins mangé…|Tu culpabilises|Tu reprends simplement au repas suivant|Tu arrêtes tout|Tu compenses|1|Un jour ne fait pas ton parcours."];
+var QD=QB.map(function(s){var a=s.split('|'),f=a.pop(),ok=+a.pop();return{q:a[0],o:a.slice(1),ok:ok,f:f}});
+var QN=QD.length,PER=5,ord=sh(QN,Math.floor(DN*PER/QN)+1),pos=(DN*PER)%QN,TQ=[];for(var z=0;z<PER;z++)TQ.push(QD[ord[(pos+z)%QN]]);
+var qi=0,score=0,qh=store.get('quiz',{}),qk=new Date().toDateString();
+function streak(){var n=0,d=new Date();while(qh[d.toDateString()]!=null){n++;d.setDate(d.getDate()-1)}return n}
+function drawQ(){var q=TQ[qi],o=$('#qo'),lock=false,oo=sh(q.o.length,DN*31+qi+1);$('#qn').textContent='Quiz du jour '+(DN+1)+' · question '+(qi+1)+'/'+PER;$('#qq').textContent=q.q;$('#qf').textContent='';$('#qnext').style.display='none';o.innerHTML='';
+oo.forEach(function(idx){var b=document.createElement('button');b.textContent=q.o[idx];b.onclick=function(){if(lock)return;lock=true;if(idx==q.ok){b.className='ok';score++}else{b.className='ko';o.children[oo.indexOf(q.ok)].className='ok'}$('#qf').textContent=q.f;$('#qnext').style.display='inline-block';$('#qnext').textContent=qi<PER-1?'Question suivante':'Voir mon score'};o.appendChild(b)})}
+$('#qnext').onclick=function(){if(qi>=PER){qi=0;score=0;drawQ();return}qi++;if(qi<PER){drawQ()}else{qh[qk]=Math.max(qh[qk]||0,score);store.set('quiz',qh);var st=streak();$('#qn').textContent='Résultat du jour';$('#qq').textContent=score+' / '+PER+(score>=4?' · Bravo, tu maîtrises.':' · Chaque question t\'apprend quelque chose.');$('#qo').innerHTML='';$('#qf').textContent='Série : '+st+' jour'+(st>1?'s':'')+' de quiz d\'affilée. Un nouveau quiz t\'attend demain.';$('#qnext').textContent='Refaire le quiz'}};
+drawQ();
+
+var S=[
+{n:"Base fixe · chaque semaine",c:[["Protéines",["Blancs de poulet ou dinde","Œufs x 12","Yaourt grec entier ou fromage blanc entier","Skyr","Saumon ou cabillaud surgelé","Steak haché 5 % ou 15 %"]],
+["Féculents",["Flocons d'avoine","Riz","Pâtes","Pommes de terre","Pain complet ou au levain"]],
+["Laitages et énergie",["Lait entier","Comté, emmental ou mozzarella","Beurre de cacahuète 100 %","Amandes, noix ou noix de cajou","Miel"]],
+["Fruits et légumes",["Bananes","Fruits rouges surgelés","Pommes ou compotes","Légumes surgelés à cuire","Tomates"]],
+["Placard",["Huile d'olive","Chocolat noir","Barres de céréales","Graines de chia ou de courge"]]]},
+{n:"Semaine A · en plus",c:[["À ajouter",["Avocats","Quinoa","Mangue","Saumon fumé","Yaourts à boire","Dattes"]]]},
+{n:"Semaine B · en plus",c:[["À ajouter",["Crevettes surgelées","Patates douces","Clémentines","Lentilles corail","Lait de coco","Beurre d'amande"]]]},
+{n:"Semaine C · en plus",c:[["À ajouter",["Thon","Semoule","Poires","Pois chiches","Tortillas","Fromage frais"]]]},
+{n:"Semaine D · en plus",c:[["À ajouter",["Jambon de dinde","Gnocchis","Kiwis","Edamame surgelés","Galettes de riz","Pépites de chocolat"]]]}];
+var sc=store.get('shop',{}),sw=$('#shopwrap');
+S.forEach(function(s,si){var p=document.createElement('div');p.className='panel'+(si==0?' on':'');p.id='s'+si;var h='<div class="card shop"><h3>'+s.n+'</h3>';
+s.c.forEach(function(c){h+='<h4>'+c[0]+'</h4>';c[1].forEach(function(it,ii){var k=si+'_'+c[0]+'_'+ii;h+='<label class="check'+(sc[k]?' done':'')+'"><input type="checkbox" data-k="'+k+'"'+(sc[k]?' checked':'')+'><span>'+it+'</span></label>'})});
+if(si>0)h+='<div class="rot" style="font-size:14px">Cette semaine, ta base fixe plus ces 6 produits. Les menus utilisent en priorité ces nouveautés.</div>';
+p.innerHTML=h+'</div>';sw.appendChild(p)});
+tabs('shop');
+sw.querySelectorAll('input').forEach(function(i){i.onchange=function(){sc[i.dataset.k]=i.checked;store.set('shop',sc);i.parentNode.classList.toggle('done',i.checked)}});
+$('#resetshop').onclick=function(){sc={};store.set('shop',sc);sw.querySelectorAll('input').forEach(function(i){i.checked=false;i.parentNode.classList.remove('done')});toast('Liste remise à zéro')};
+
+var bs=store.get('bilan',{});document.querySelectorAll('#bilan input').forEach(function(i){if(bs[i.dataset.s]){i.checked=true;i.parentNode.classList.add('done')}i.onchange=function(){bs[i.dataset.s]=i.checked;store.set('bilan',bs);i.parentNode.classList.toggle('done',i.checked)}});
+
+var M=[
+{bf:["Skyr, avoine, fruits rouges, amandes","Omelette 3 œufs, pain complet, kiwi","Porridge au lait, banane, cannelle","Yaourt grec, muesli sans sucre, fraises","Tartines levain, œufs au plat, tomate"],
+lu:["Poulet, quinoa, poivrons grillés","Bœuf maigre, riz, courgettes","Saumon, pommes de terre, haricots verts","Dinde, lentilles corail, carottes","Crevettes, semoule, crudités"],
+sn:["Fromage blanc, pomme, noix","Skyr, kiwi, graines de chia","2 œufs durs, orange","Yaourt grec, poire, cannelle"],
+di:["Cabillaud, patate douce, brocoli","Poulet citron, pommes de terre, salade","Colin, riz, épinards","Omelette aux champignons, pain complet, salade","Dinde, pâtes complètes, courgettes"]},
+{bf:["Skyr, flocons d'avoine, banane (à emporter)","2 œufs durs, pain complet, pomme","Overnight oats préparés la veille","Fromage blanc, muesli, clémentines","Galettes de riz, skyr, fruits rouges"],
+lu:["Salade bocal : poulet, riz, tomates, concombre","Wrap complet dinde, crudités, fromage frais léger","Boîte thon, pommes de terre, haricots verts","Taboulé maison, poulet, menthe","Bento : œufs, quinoa, edamame, carottes"],
+sn:["Skyr à boire, banane","Fromage blanc, pomme","Amandes, orange, galette de riz","Yaourt grec, kiwi"],
+di:["Poêlée crevettes, légumes surgelés, riz","Omelette, salade, pain complet","Steak haché 5 %, pommes de terre micro-ondes, salade","Pavé de saumon au four, courgettes, riz","Poulet, semoule, ratatouille"]},
+{bf:["Porridge chaud, pomme cuite, cannelle","Pain perdu protéiné (œufs, lait, pain complet)","Crêpes avoine-œufs, fromage blanc, fruits rouges","Chocolat chaud au lait, tartines, œufs brouillés","Riz au lait maison allégé, poire"],
+lu:["Hachis parmentier maison au bœuf 5 %","Poulet basquaise, riz","Chili con carne maison, riz","Gratin de pâtes complètes, dinde, brocoli","Curry de poulet au lait de coco léger, riz"],
+sn:["Fromage blanc tiède, compote sans sucre","Skyr, chocolat noir 85 %, noix","Yaourt grec, miel, amandes","Pomme au four, fromage blanc"],
+di:["Soupe de légumes, cabillaud, pain complet","Poulet rôti, purée maison, haricots verts","Blanquette légère de dinde, riz","Parmentier de poisson, salade","Lentilles, saucisse de volaille, carottes"]},
+{bf:["Pancakes avoine-banane, skyr, fruits rouges","Bowl skyr, granola maison, mangue","Tartine levain, beurre de cacahuète, banane, skyr","Brioche complète toastée, œufs, fraises","Smoothie bowl : skyr, fruits rouges, avoine"],
+lu:["Burger maison : pain complet, steak 5 %, crudités, potatoes au four","Poke bowl saumon, riz, avocat, edamame","Pizza maison pâte fine, jambon de dinde, champignons, salade","Tacos maison poulet, poivrons, fromage blanc épicé","Pâtes complètes bolognaise maison, parmesan"],
+sn:["Skyr, chocolat noir 85 %, fraises","Mug cake avoine-œuf-cacao","Yaourt grec, beurre de cacahuète, banane","Fromage blanc, granola maison, kiwi"],
+di:["Fajitas poulet, légumes, riz","Saumon teriyaki maison, riz, brocoli","Wok crevettes, nouilles de riz, légumes","Quiche sans pâte aux légumes, salade, pain complet","Brochettes dinde, patate douce frites au four, salade"]}];
+var moodNames=["Énergique","Pressée","Réconfort","Gourmande"];
+function phase(d){if(d<=14)return["Étape 1","1 600 kcal · 90 g protéines · 53 g lipides · 191 g glucides"];if(d<=28)return["Étape 2","1 800 kcal · 90 g protéines · 60 g lipides · 225 g glucides"];return["Étape 3","1 950 kcal · 90 g protéines · 65 g lipides · 251 g glucides"]}
+var mood=store.get('mood',0),day=store.get('day',1),mDone=store.get('mdone',{}),swaps={};
+function pick(arr,d,off){return arr[(d*3+off+(swaps[d+'_'+off]||0))%arr.length]}
+function drawCal(){var c=$('#cal');c.innerHTML='';for(var d=1;d<=31;d++){(function(d){var b=document.createElement('button');b.textContent=d;b.className=(d<=7?'w1 ':'')+(d==28?'plaisir ':'')+(d==day?'on ':'')+(mDone[d]?'done':'');b.onclick=function(){day=d;store.set('day',d);drawCal();drawMenu()};c.appendChild(b)})(d)}
+var n=cnt(mDone);$('#ptxt').textContent=n+' / 31';$('#pbar').style.width=(n/31*100)+'%'}
+function row(h,t,v,off){return '<div class="meal"><div class="h">'+h+'</div><div><b>'+t+'</b><span>'+v+'</span>'+(off!=null?'<br><button class="swap" data-o="'+off+'">Échanger</button>':'')+'</div></div>'}
+function drawMenu(){var M0=M[mood],p=phase(day),h='<div class="dayhead"><h3>Jour '+day+' · '+moodNames[mood]+'</h3><span class="tag">'+p[0]+'</span></div><p style="font-size:13px;color:var(--muted);margin:0 0 6px">'+p[1]+'</p>';
+h+=row('8h','Petit-déjeuner',pick(M0.bf,day,0),0);h+=row('13h','Déjeuner',pick(M0.lu,day,1),1);h+=row('16h30','Collation',pick(M0.sn,day,2),2);
+if(day==28){h+=row('20h','Repas plaisir','Le repas qui te fait vraiment envie. Savoure-le, note-le, et on reprend demain matin.',null)}else{h+=row('20h','Dîner',pick(M0.di,day,3),3)}
+h+='<p style="font-size:13px;color:var(--muted);margin:10px 0 0">Portions pour tes étapes 3 et 4 : protéines 100 à 120 g crues, féculents 60 à 70 g crus ou 200 g de pommes de terre, légumes cuits en petite quantité, 1 c. à soupe d\'huile par repas. Aux étapes 1 et 2, prends des portions un peu plus petites et garde ta collation du matin.</p>';
+h+='<button class="donebtn'+(mDone[day]?' ok':'')+'" id="mbtn">'+(mDone[day]?'Journée réussie ✓':'J\'ai suivi ma journée')+'</button>';
+var mc=$('#menu');mc.innerHTML=h;
+mc.querySelectorAll('.swap').forEach(function(b){b.onclick=function(){var k=day+'_'+b.dataset.o;swaps[k]=(swaps[k]||0)+1;drawMenu();toast('Repas échangé')}});
+$('#mbtn').onclick=function(){mDone[day]=!mDone[day];store.set('mdone',mDone);if(mDone[day]){var n=cnt(mDone);toast(n%7==0?n+' jours validés. Tu rayonnes.':'Encore une belle journée');if(day<31){day++;store.set('day',day)}}drawCal();drawMenu()}}
+document.querySelectorAll('.mood').forEach(function(el){el.classList.toggle('on',+el.dataset.m==mood);el.onclick=function(){mood=+el.dataset.m;store.set('mood',mood);document.querySelectorAll('.mood').forEach(function(o){o.classList.remove('on')});el.classList.add('on');drawMenu()}});
+drawCal();drawMenu();
+
+var T=store.get('tanita',[{d:'2026-11-04',p:'48,1',g:'21,9',m:'35,65',v:'1,0',e:'60,0'}]);
+function drawT(){var h='<tr><th>Date</th><th>Poids</th><th>MG %</th><th>Muscle</th><th>Visc.</th><th>Eau %</th><th></th></tr>';T.forEach(function(x,i){var dd=x.d?x.d.split('-').reverse().join('/'):'';h+='<tr><td>'+dd+'</td><td>'+x.p+'</td><td>'+x.g+'</td><td>'+x.m+'</td><td>'+x.v+'</td><td>'+x.e+'</td><td>'+(i>0?'<button class="swap" data-i="'+i+'">×</button>':'')+'</td></tr>'});var t=$('#ttab');t.innerHTML=h;t.querySelectorAll('button').forEach(function(b){b.onclick=function(){T.splice(+b.dataset.i,1);store.set('tanita',T);drawT()}})}
+$('#tadd').onclick=function(){var x={d:$('#tdate').value,p:$('#tpoids').value,g:$('#tmg').value,m:$('#tmm').value,v:$('#tvis').value,e:$('#teau').value};if(!x.p){toast('Indique au moins ton poids');return}T.push(x);store.set('tanita',T);drawT();['#tpoids','#tmg','#tmm','#tvis','#teau'].forEach(function(s){$(s).value=''});toast('Mesure enregistrée')};
+drawT();
+
+$('#code').onclick=function(){try{navigator.clipboard.writeText('CHANTAL')}catch(e){}toast('Code copié : CHANTAL')};
+})();
+</script>
+<script>
+(function(){
+var K='bf_caly_cc_';
+function g(k,d){try{var v=localStorage.getItem(K+k);return v?JSON.parse(v):d}catch(e){return d}}
+function s(k,v){try{localStorage.setItem(K+k,JSON.stringify(v))}catch(e){t('Mémoire du téléphone pleine : fais une sauvegarde')}}
+function $(x){return document.querySelector(x)}
+function $$(x){return Array.prototype.slice.call(document.querySelectorAll(x))}
+function t(m){var el=$('#toast');if(!el)return;el.textContent=m;el.classList.add('show');clearTimeout(el._t);el._t=setTimeout(function(){el.classList.remove('show')},2400)}
+function esc(x){return String(x).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function num(x){return parseFloat(String(x||'').replace(',','.'))}
+function r0(x){return Math.round(x)}
+function r1(x){return Math.round(x*10)/10}
+function fr(x){return r0(x).toLocaleString('fr-FR')}
+function norm(x){return String(x).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/œ/g,'oe')}
+var DB="Skyr nature|63|11|4|0.2;Fromage blanc 0 %|46|7.5|4|0.1;Fromage blanc 3 %|75|7|4|3;Yaourt grec 2 %|73|10|4|2;Yaourt nature|60|4|5|2.5;Lait demi-écrémé (ml)|46|3.3|4.8|1.6;Boisson amande sans sucre (ml)|15|0.5|0.3|1.2;Œuf entier (pièce 60 g)|145|12.5|0.7|10|60;Blanc d'œuf|48|10.5|0.7|0.2;Whey (dose 30 g)|380|78|6|5|30;Mozzarella légère|165|20|1.5|9;Emmental|380|28|0|30;Parmesan|400|35|0|29;Fromage frais léger|120|8|4|8;Blanc de poulet cru|110|23|0|1.5;Blanc de dinde cru|107|24|0|1;Poulet rôti avec peau|215|25|0|13;Steak haché 5 % cru|125|21|0|5;Steak haché 15 % cru|215|18|0|15;Bœuf rumsteck cru|120|22|0|3.5;Saucisse de volaille|190|14|3|13;Cabillaud cru|80|18|0|0.7;Colin cru|75|17|0|0.7;Saumon cru|200|20|0|13;Saumon fumé|180|22|0|10;Thon au naturel égoutté|110|25|0|1;Sardines à l'huile égouttées|210|24|0|13;Maquereau|200|19|0|14;Crevettes cuites|95|21|0|1;Tofu nature|120|12|2|7;Riz basmati cru|350|8|77|0.6;Riz basmati cuit|130|2.7|28|0.3;Riz complet cru|350|8|73|2.5;Pâtes complètes crues|340|13|64|2.5;Pâtes blanches crues|355|12|72|1.5;Pâtes cuites|150|5|30|0.9;Quinoa cru|365|14|60|6;Semoule complète crue|340|12|67|2;Flocons d'avoine|370|13|59|7;Muesli sans sucre ajouté|360|10|60|7;Granola|450|9|62|18;Pomme de terre crue|77|2|17|0.1;Patate douce crue|86|1.6|20|0.1;Lentilles crues|340|24|50|1.5;Lentilles cuites|115|9|17|0.4;Lentilles corail crues|340|24|52|1.5;Pois chiches cuits|140|8|18|2.5;Haricots rouges cuits|115|8|15|0.5;Edamame|120|11|7|5;Pain complet (tranche 35 g)|240|9|43|3|35;Pain au levain (tranche 35 g)|250|8.5|48|1.5|35;Baguette|270|9|55|1.5;Galette de riz (pièce 8 g)|380|8|80|3|8;Wrap complet (pièce 60 g)|300|9|48|7|60;Pomme (pièce 150 g)|52|0.3|12|0.2|150;Poire (pièce 170 g)|57|0.4|13|0.1|170;Banane (pièce 120 g)|90|1.1|20|0.3|120;Orange (pièce 150 g)|47|0.9|10|0.1|150;Clémentine (pièce 60 g)|47|0.8|10|0.2|60;Kiwi (pièce 75 g)|61|1.1|11|0.5|75;Fraises|32|0.7|6|0.3;Framboises|52|1.2|5|0.7;Myrtilles|57|0.7|12|0.3;Fruits rouges surgelés|45|1|7|0.3;Mangue|60|0.8|14|0.4;Ananas|50|0.5|11|0.1;Raisin|70|0.7|16|0.2;Melon|35|0.8|8|0.2;Pastèque|30|0.6|7|0.2;Pêche (pièce 150 g)|40|0.9|9|0.3|150;Abricot (pièce 40 g)|48|1.4|9|0.4|40;Compote sans sucre|55|0.3|12|0.1;Dattes (pièce 8 g)|280|2.5|66|0.4|8;Avocat|160|2|2|15;Salade verte|15|1.3|1.5|0.2;Épinards|23|2.9|1.4|0.4;Tomate|18|0.9|3|0.2;Concombre|12|0.7|2|0.1;Courgette|17|1.2|2.5|0.3;Brocoli|34|2.8|4|0.4;Chou-fleur|25|1.9|3|0.3;Haricots verts|31|1.8|4.5|0.2;Carotte|41|0.9|8|0.2;Poivron|26|1|5|0.3;Champignons|22|3|1|0.3;Aubergine|25|1|4|0.2;Petits pois|80|5.4|11|0.4;Maïs|90|3.3|16|1.3;Soupe de légumes maison (ml)|35|1|6|0.8;Ratatouille|60|1.2|6|3.5;Sauce tomate maison|45|1.5|7|1.2;Huile d'olive (c. à soupe 10 g)|900|0|0|100|10;Huile de colza (c. à soupe 10 g)|900|0|0|100|10;Beurre (noisette 10 g)|740|0.7|0.6|82|10;Graines de chia (c. à soupe 12 g)|490|17|8|31|12;Graines de lin moulues (c. à soupe 10 g)|530|18|2|42|10;Graines de courge (c. à soupe 15 g)|570|30|5|49|15;Graines de tournesol (c. à soupe 15 g)|580|21|12|51|15;Graines de sésame (c. à soupe 10 g)|575|18|12|50|10;Graines de chanvre décortiquées (c. à soupe 15 g)|570|32|3|49|15;Amandes (pièce 1,2 g)|600|21|8|52|1.2;Noix (cerneau 4 g)|690|15|7|65|4;Noisettes (pièce 1,5 g)|640|15|7|61|1.5;Noix de cajou (pièce 1,6 g)|580|18|27|44|1.6;Beurre de cacahuète 100 % (c. à café 10 g)|600|25|12|50|10;Chocolat noir 85 % (carré 5 g)|590|10|20|48|5;Sirop de yacon (c. à café 5 g)|260|0.4|65|0|5;Miel (c. à café 7 g)|320|0.3|80|0|7;Sucre (c. à café 5 g)|400|0|100|0|5;Stévia pure|0|0|0|0;Café noir (ml)|1|0.1|0|0;Jus d'orange (ml)|45|0.7|10|0.2;Soda (ml)|42|0|10.6|0;Vin rouge (ml)|85|0|2.6|0;Bière (ml)|43|0.5|3.6|0;Burger classique (pièce 220 g)|250|13|25|11|220;Frites|290|3.5|37|14;Sushi saumon (pièce 30 g)|150|6|25|2.5|30;Croissant (pièce 60 g)|410|8|46|21|60;Pain au chocolat (pièce 70 g)|420|7.5|48|22|70;Chips|540|6|50|34;Biscuits sablés|480|6|68|20;Lait sans lactose demi-écrémé (ml)|46|3.3|4.8|1.6;Viande des Grisons|180|38|1|3;Skyr à boire (ml)|60|8|5.5|0.2;Petit-suisse nature 0 % (pièce 60 g)|50|7.5|4|0.2|60;Faisselle 0 %|45|7.5|3.8|0.1;Cottage cheese|98|11|3.4|4.3;Yaourt brebis nature|95|5|4.5|6.5;Yaourt soja nature|45|4|1|2.3;Lait entier (ml)|65|3.2|4.7|3.6;Lait écrémé (ml)|34|3.4|4.9|0.1;Boisson avoine (ml)|45|0.8|7|1.3;Boisson soja nature (ml)|38|3.4|0.8|2;Comté|410|28|0|34;Feta|265|17|0.5|21;Chèvre frais|200|11|2|17;Camembert|285|20|0.5|23;Ricotta|140|9|3.5|10;Fromage râpé|380|28|0|30;Crème fraîche légère 15 %|160|2.8|4|15;Crème fraîche épaisse 30 %|300|2.4|3|30;Blanc de poulet cuit|150|31|0|2.5;Cuisse de poulet cuite sans peau|175|26|0|8;Escalope de dinde cuite|135|29|0|2;Rôti de bœuf cuit|170|28|0|6;Bavette crue|140|21|0|6;Steak haché 5 % cuit|155|26|0|6;Veau escalope crue|105|22|0|2;Agneau gigot cuit|225|26|0|13;Canard magret cuit|200|24|0|11;Blanc de poulet tranché (tranche 10 g)|105|21|1|1.8|10;Bresaola|155|33|0.5|2.5;Merguez|300|15|1|26;Thon frais cru|125|26|0|2;Thon à l'huile égoutté|190|26|0|10;Truite crue|140|20|0|6.5;Bar cru|95|18|0|2.5;Dorade crue|105|20|0|3;Lieu noir cru|80|18|0|0.9;Merlu cru|85|17|0|1.5;Saumon cuit|205|22|0|13;Poisson blanc cuit|100|22|0|1;Surimi (bâtonnet 15 g)|105|7.5|14|1.5|15;Moules cuites|110|17|4|2.5;Calamars crus|80|16|1|1.2;Coquilles Saint-Jacques crues|75|15|2|0.5;Œuf dur (pièce 55 g)|145|12.5|0.7|10|55;Omelette nature|155|11|0.5|12;Tempeh|195|19|9|11;Seitan|120|24|4|1.5;Steak végétal soja|200|17|6|11;Houmous|300|8|14|23;Falafel (pièce 20 g)|330|13|31|18|20;Riz complet cuit|125|2.7|25|1;Riz sauvage cru|355|15|72|1;Pâtes complètes cuites|140|5.5|26|1.2;Quinoa cuit|120|4.4|21|1.9;Boulgour cru|345|12|69|1.5;Boulgour cuit|85|3|18|0.2;Semoule cuite|110|3.8|22|0.3;Polenta cuite|70|1.6|15|0.3;Sarrasin cru|345|13|69|3.4;Pomme de terre cuite|80|2|17|0.1;Purée maison|90|2|13|3.5;Patate douce cuite|90|1.6|20|0.1;Pois cassés crus|345|24|50|1.5;Haricots blancs cuits|110|7.5|15|0.5;Flageolets cuits|100|7|13|0.6;Gnocchis|150|4|32|0.4;Pain de mie complet (tranche 25 g)|250|9|43|4|25;Pain de seigle (tranche 35 g)|230|7|43|1.5|35;Pain aux céréales (tranche 35 g)|265|10|44|5|35;Biscotte complète (pièce 8 g)|400|12|70|6|8;Pain des fleurs (tartine 8 g)|380|11|78|2.5|8;Crackers suédois (pièce 10 g)|350|10|64|2|10;Galette de sarrasin (pièce 50 g)|190|6|38|1.5|50;Tortilla blé (pièce 40 g)|310|8|52|7|40;Corn flakes|380|7|84|0.9;Pétales de blé complet|360|11|70|2.5;Crème de riz|360|7|80|0.8;Farine de blé|345|10|72|1.2;Farine d'avoine|370|13|60|7;Son d'avoine|330|17|47|7;Pruneaux (pièce 10 g)|240|2.3|57|0.4|10;Abricots secs (pièce 8 g)|240|3.4|56|0.5|8;Figues sèches (pièce 20 g)|250|3.3|58|0.9|20;Raisins secs|300|3|68|0.5;Cerises|60|1|13|0.3;Prune (pièce 50 g)|45|0.7|10|0.3|50;Nectarine (pièce 150 g)|45|1|10|0.3|150;Pamplemousse|42|0.8|9|0.1;Grenade|80|1.7|17|1.2;Fruit de la passion (pièce 20 g)|95|2.2|13|0.7|20;Litchi|70|0.8|16|0.4;Citron|30|0.7|5|0.3;Compote pomme sans sucre (gourde 90 g)|55|0.3|12|0.1|90;Purée de fruits sans sucre|60|0.5|13|0.2;Chou blanc|25|1.3|4|0.2;Chou rouge|30|1.4|5|0.2;Chou de Bruxelles|45|3.4|5|0.4;Chou kale|45|4.3|4|0.9;Poireau|30|1.5|5|0.3;Fenouil|20|1.2|3|0.2;Céleri branche|15|0.7|1.6|0.2;Céleri rave|30|1.5|4|0.3;Betterave cuite|45|1.7|8|0.2;Radis|15|0.8|2|0.1;Asperges|25|2.4|2.5|0.2;Artichaut cuit|45|2.9|5|0.2;Potiron|25|1|5|0.1;Butternut|45|1|10|0.1;Navet|20|0.9|3.5|0.2;Endive|17|1|2.5|0.1;Mâche|20|2|1|0.4;Roquette|25|2.6|2|0.7;Tomates cerises|20|0.9|3|0.2;Oignon|35|1.2|7|0.2;Ail (gousse 4 g)|130|6|25|0.5|4;Haricots verts surgelés|30|1.8|4|0.2;Poêlée de légumes surgelée|55|2|7|2;Légumes verts cuits|28|2|4|0.3;Crudités|20|1|3|0.2;Olives vertes (pièce 4 g)|145|1|1|15|4;Olives noires (pièce 4 g)|200|1.5|2|20|4;Cornichons|15|0.9|2|0.1;Huile de noix (c. à soupe 10 g)|900|0|0|100|10;Huile de coco (c. à soupe 10 g)|900|0|0|100|10;Vinaigrette maison (c. à soupe 15 g)|450|0.2|2|49|15;Mayonnaise (c. à soupe 15 g)|700|1.3|1.5|76|15;Ketchup (c. à soupe 15 g)|110|1.2|25|0.2|15;Moutarde (c. à café 5 g)|150|7|5|11|5;Sauce soja (c. à soupe 15 ml)|60|8|5|0.1|15;Pesto (c. à soupe 15 g)|480|5|5|48|15;Sauce tomate du commerce|50|1.5|8|1.2;Lait de coco|180|1.8|3|18;Crème de coco|300|3|6|30;Beurre de cacahuète (c. à soupe 15 g)|600|25|12|50|15;Purée d'amande (c. à café 10 g)|630|21|6|56|10;Pistaches décortiquées|590|21|17|46;Noix du Brésil (pièce 4 g)|680|14|4|67|4;Noix de macadamia|740|8|5|76;Mélange de noix|620|18|12|55;Cacahuètes grillées|600|25|12|50;Chocolat noir 70 % (carré 5 g)|560|8|33|42|5;Chocolat au lait (carré 5 g)|540|7|57|31|5;Cacao en poudre non sucré (c. à café 5 g)|380|20|12|22|5;Confiture (c. à café 10 g)|250|0.4|60|0.1|10;Pâte à tartiner (c. à café 10 g)|540|6|57|31|10;Sirop d'érable (c. à café 7 g)|260|0|67|0|7;Barre protéinée (pièce 60 g)|360|33|35|12|60;Barre de céréales (pièce 25 g)|400|6|70|10|25;Gâteau de riz (pièce 100 g)|130|3.3|23|2.8|100;Compote de pomme sucrée|80|0.3|19|0.1;Crème dessert chocolat (pot 125 g)|125|3.5|19|3.5|125;Glace vanille (boule 50 g)|200|3.5|24|10|50;Sorbet (boule 50 g)|120|0.3|29|0.2|50;Madeleine (pièce 25 g)|440|6|54|22|25;Pain d'épices (tranche 25 g)|330|4|74|1.5|25;Brioche (tranche 30 g)|370|8.5|50|15|30;Pain au lait (pièce 35 g)|340|9|52|10|35;Crêpe nature (pièce 50 g)|190|6|26|7|50;Gaufre (pièce 50 g)|400|6|52|19|50;Cookie (pièce 25 g)|480|6|64|22|25;Tarte aux fruits (part 120 g)|250|3.5|35|11|120;Lasagnes (part 300 g)|140|7.5|12|7|300;Hachis parmentier (part 300 g)|125|6.5|10|6.5|300;Couscous royal (part 400 g)|150|9|15|6|400;Paëlla (part 350 g)|140|8|16|5|350;Salade César (part 300 g)|150|9|6|10|300;Poke bowl saumon (bol 400 g)|150|8|18|5|400;Wrap poulet (pièce 200 g)|210|11|24|8|200;Kebab (pièce 350 g)|240|12|23|11|350;Tacos (pièce 400 g)|260|11|25|13|400;Nuggets de poulet (pièce 20 g)|250|15|16|14|20;Pizza margherita|230|9|30|8;Maki (pièce 20 g)|140|5|26|1.5|20;California roll (pièce 30 g)|170|5|27|4.5|30;Ramen (bol 500 g)|90|4.5|11|3|500;Pad thaï (part 350 g)|170|7|22|6|350;Curry de poulet au lait de coco (part 300 g)|150|11|5|9|300;Soupe miso (bol 250 ml)|25|2|2.5|1|250;Gaspacho (ml)|40|0.8|4|2.3;Velouté de potiron (ml)|45|1|6|2;Thé (ml)|1|0|0.2|0;Tisane (ml)|1|0|0.2|0;Café au lait demi-écrémé (ml)|25|1.7|2.5|0.8;Cappuccino (tasse 180 ml)|40|2.2|3.3|1.8|180;Latte boisson végétale (tasse 250 ml)|35|1|5|1.2|250;Chocolat chaud (ml)|80|3.2|11|2.5;Jus de pomme (ml)|45|0.1|11|0.1;Smoothie fruits (ml)|55|0.6|12|0.2;Coca zéro (ml)|0|0|0|0;Eau pétillante aromatisée sans sucre (ml)|0|0|0|0;Kombucha (ml)|15|0|3.5|0;Vin blanc (ml)|80|0.1|2.6|0;Champagne (ml)|80|0.3|1.5|0;Spritz (verre 200 ml)|100|0|9|0|200;Rhum ou whisky (ml)|230|0|0|0;Jambon de dinde (tranche 40 g)|105|21|1|2|40";
+var BASE=DB.split(';').map(function(r){var a=r.split('|');return{n:a[0],k:+a[1],p:+a[2],g:+a[3],l:+a[4],u:a[5]?+a[5]:0}});
+var C=g('custom',[]),J=g('journal',{}),M=g('meta',{}),FV=g('fav',[]),RC=g('recent',[]),SM=g('meals',[]),W=g('weights',[]),goalMode=g('goal',1600);
+function allF(){return C.concat(BASE)}
+function findF(n){var a=allF();for(var i=0;i<a.length;i++)if(a[i].n==n)return a[i];return null}
+if(!RC.length){Object.keys(J).sort().reverse().forEach(function(d){(J[d]||[]).forEach(function(e){if(RC.indexOf(e.n)<0&&RC.length<20)RC.push(e.n)})})}
+var MN=['Petit-déjeuner','Déjeuner','Collation','Dîner','Extra'],meal=0,sel=null,off=0,chip='r',per=7,pendQ=null;
+(function(){var h=new Date().getHours();meal=h<11?0:h<15?1:h<18?2:3})();
+function key(o){var d=new Date();d.setHours(12,0,0,0);d.setDate(d.getDate()+o);return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2)}
+function dOf(o){var d=new Date();d.setHours(12,0,0,0);d.setDate(d.getDate()+o);return d}
+var START=Date.UTC(2026,10,4);
+function palier(o){var d=dOf(o),w=Math.floor((Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())-START)/864e5/7)+1;if(w<1)w=1;
+if(w<=2)return[1600,'Étape 1 · semaine '+w];if(w<=4)return[1800,'Étape 2 · semaine '+w];if(w<=7)return[1950,'Étape 3 · semaine '+w];return[2100,'Étape 4 · semaine '+w]}
+function goalOf(o){return goalMode=='auto'?palier(o)[0]:+goalMode}
+function macT(gl){var TL=r0(gl*0.3/9);return{k:gl,p:90,l:TL,g:r0((gl-360-TL*9)/4)}}
+function tot(k){var r={k:0,p:0,g:0,l:0};(J[k]||[]).forEach(function(e){r.k+=e.k;r.p+=e.p;r.g+=e.g;r.l+=e.l});return r}
+function meta(k){return M[k]||(M[k]={})}
+function saveM(){s('meta',M)}
+
+/* ---------- photos (IndexedDB) ---------- */
+var idb=null;function db(){return new Promise(function(res,rej){if(idb)return res(idb);if(!window.indexedDB)return rej();var r=indexedDB.open('bf_caly_photos',1);r.onupgradeneeded=function(){r.result.createObjectStore('p')};r.onsuccess=function(){idb=r.result;res(idb)};r.onerror=rej})}
+function pPut(id,v){return db().then(function(d){return new Promise(function(res){var tx=d.transaction('p','readwrite');tx.objectStore('p').put(v,id);tx.oncomplete=res})})}
+function pGet(id){return db().then(function(d){return new Promise(function(res){var q=d.transaction('p').objectStore('p').get(id);q.onsuccess=function(){res(q.result)};q.onerror=function(){res(null)}})})}
+function pDel(id){return db().then(function(d){d.transaction('p','readwrite').objectStore('p').delete(id)})}
+function pAll(){return db().then(function(d){return new Promise(function(res){var o={},q=d.transaction('p').objectStore('p').openCursor();q.onsuccess=function(){var c=q.result;if(c){o[c.key]=c.value;c.continue()}else res(o)}})})}
+function shrink(file,max){return new Promise(function(res,rej){var u=URL.createObjectURL(file),im=new Image();im.onload=function(){var sc=Math.min(1,max/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=r0(im.width*sc);c.height=r0(im.height*sc);c.getContext('2d').drawImage(im,0,0,c.width,c.height);URL.revokeObjectURL(u);res(c.toDataURL('image/jpeg',0.72))};im.onerror=rej;im.src=u})}
+function zoom(src){var z=document.createElement('div');z.className='k2zoom';z.innerHTML='<img alt="Photo" src="'+src+'"><button class="swap">Fermer</button>';z.onclick=function(){z.remove()};document.body.appendChild(z)}
+
+/* ---------- header / goal ---------- */
+$('#ccgoal').value=goalMode;
+$('#ccgoal').onchange=function(){goalMode=this.value;s('goal',goalMode);draw()};
+$('#ccprev').onclick=function(){off--;draw()};$('#ccnext').onclick=function(){if(off<0){off++;draw()}};
+$('#ccpickdate').max=key(0);
+$('#ccpickdate').onchange=function(){if(!this.value)return;var p=this.value.split('-'),d=new Date(+p[0],p[1]-1,+p[2],12),n=dOf(0);off=Math.min(0,Math.round((d-n)/864e5));draw()};
+function meals(){var c=$('#ccmeal');c.innerHTML='';MN.forEach(function(n,i){var b=document.createElement('button');b.textContent=n;if(i==meal)b.className='on';b.onclick=function(){meal=i;meals()};c.appendChild(b)})}
+$$('#k2tabs button').forEach(function(b){b.onclick=function(){$$('#k2tabs button').forEach(function(o){o.classList.toggle('on',o==b)});$$('.k2pane').forEach(function(p){p.classList.toggle('on',p.dataset.p==b.dataset.t)});if(b.dataset.t!='b')camStop()}});
+
+/* ---------- search ---------- */
+function row(f,extra){var d=document.createElement('div');d.className='ccit';d.innerHTML='<div><b>'+(FV.indexOf(f.n)>-1?'★ ':'')+esc(f.n)+'</b>'+(extra?'<small>'+esc(extra)+'</small>':'')+'</div><span>'+fr(f.k)+' kcal'+(f.u?' · '+fr(f.k*f.u/100)+' / portion':' / 100 g')+'</span>';d.onclick=function(){pick(f)};return d}
+function listChip(){var r=$('#ccres');r.innerHTML='';var items=[];
+if(chip=='r')items=RC.map(findF).filter(Boolean);
+if(chip=='f')items=FV.map(findF).filter(Boolean);
+if(chip=='re')items=C.filter(function(f){return f.rec});
+if(chip=='mine')items=C.filter(function(f){return !f.rec});
+if(chip=='m'){if(!SM.length){r.innerHTML='<p class="k2help">Aucun repas type pour le moment. Sous un repas de ton journal, touche « Repas type » pour l\'enregistrer.</p>';return}
+SM.forEach(function(m,i){var kc=0;m.it.forEach(function(e){kc+=e.k});var d=document.createElement('div');d.className='ccit';d.innerHTML='<div><b>'+esc(m.n)+'</b><small>'+m.it.length+' aliment(s) · touche pour l\'ajouter à « '+MN[meal]+' »</small></div><span>'+fr(kc)+' kcal <button class="swap" data-x="'+i+'" style="padding:4px 9px;margin-left:6px">×</button></span>';d.onclick=function(ev){if(ev.target.dataset.x){SM.splice(i,1);s('meals',SM);listChip();ev.stopPropagation();return}var k=key(off);J[k]=J[k]||[];m.it.forEach(function(e){var c=JSON.parse(JSON.stringify(e));c.m=meal;c.id=Date.now()+Math.random();J[k].push(c)});s('journal',J);t(m.n+' ajouté');draw()};r.appendChild(d)});return}
+if(!items.length){r.innerHTML='<p class="k2help">'+({r:'Tes aliments récents apparaîtront ici.',f:'Touche ☆ sur un aliment pour l\'ajouter à tes favoris.',re:'Aucune recette pour le moment.',mine:'Les aliments que tu crées, scannes ou lis sur une étiquette apparaîtront ici.'}[chip])+'</p>';return}
+items.slice(0,15).forEach(function(f){r.appendChild(row(f,f.b||(f.rec?'Recette · '+f.rec+' portions':'')))})}
+$$('#k2chips button').forEach(function(b){b.onclick=function(){chip=b.dataset.c;$$('#k2chips button').forEach(function(o){o.classList.toggle('on',o==b)});$('#ccq').value='';$('#k2online').style.display='none';$('#k2onres').innerHTML='';listChip()}});
+function search(){var raw=$('#ccq').value.trim(),q=norm(raw),r=$('#ccres');$('#k2onres').innerHTML='';
+if(q.length<2){$('#k2online').style.display='none';listChip();return}
+var words=q.split(/\s+/);var res=allF().map(function(f){var n=norm(f.n),sc=0;for(var i=0;i<words.length;i++){var w=words[i],p=n.indexOf(w);if(p<0)return null;sc+=p==0?0:(n.charAt(p-1)==' '?1:3)}if(FV.indexOf(f.n)>-1)sc-=2;if(RC.indexOf(f.n)>-1)sc-=1;return[sc+n.length/100,f]}).filter(Boolean).sort(function(a,b){return a[0]-b[0]});
+r.innerHTML='';if(!res.length)r.innerHTML='<p class="k2help">Pas dans ta base. Cherche dans les produits du commerce, scanne-le, ou crée-le.</p>';
+res.slice(0,12).forEach(function(x){r.appendChild(row(x[1],x[1].b))});
+$('#k2online').style.display='block';$('#k2online').textContent='Chercher « '+raw+' » dans les produits du commerce'}
+$('#ccq').oninput=search;
+function offF(p){var x=p.nutriments||{},kc=x['energy-kcal_100g'];if(kc==null&&x['energy_100g']!=null)kc=x['energy_100g']/4.184;if(kc==null)return null;var b=p.brands;if(Array.isArray(b))b=b[0];if(b)b=String(b).split(',')[0];var sq=num(p.serving_quantity);return{n:(p.product_name_fr||p.product_name||'Produit')+(b?' · '+b:''),k:r0(kc),p:r1(x.proteins_100g||0),g:r1(x.carbohydrates_100g||0),l:r1(x.fat_100g||0),u:sq>0&&sq<1000?sq:0,b:'Produit du commerce',code:p.code}}
+function keep(f){var e=findF(f.n);if(e)return e;C.unshift(f);s('custom',C);return f}
+$('#k2online').onclick=function(){var q=$('#ccq').value.trim();if(!q)return;var box=$('#k2onres');box.innerHTML='<p class="k2help">Recherche en cours…</p>';
+var u1='https://world.openfoodfacts.org/cgi/search.pl?search_terms='+encodeURIComponent(q)+'&search_simple=1&action=process&json=1&page_size=20&lc=fr&fields=code,product_name,product_name_fr,brands,nutriments,serving_quantity';
+var u2='https://search.openfoodfacts.org/search?q='+encodeURIComponent(q)+'&page_size=20&langs=fr&fields=code,product_name,product_name_fr,brands,nutriments,serving_quantity';
+function show(list){box.innerHTML='';var n=0;list.forEach(function(p){var f=offF(p);if(!f||!f.k)return;n++;var d=row(f,(f.u?'Portion '+f.u+' g · ':'')+'P '+f.p+' · G '+f.g+' · L '+f.l);d.onclick=function(){pick(keep(f))};box.appendChild(d)});if(!n)box.innerHTML='<p class="k2help">Rien trouvé. Essaie avec la marque, ou scanne le code-barres.</p>'}
+fetch(u1).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){show(d.products||[])}).catch(function(){fetch(u2).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){show(d.hits||[])}).catch(function(){box.innerHTML='<p class="k2help">La base des produits ne répond pas pour le moment, ou tu n\'as pas de connexion. Réessaie dans un instant, ou scanne le code-barres.</p>'})})};
+
+/* voice */
+var SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+if(!SR)$('#k2mic').style.display='none';else{$('#k2mic').onclick=function(){var r=new SR(),b=this;r.lang='fr-FR';r.interimResults=false;b.classList.add('rec');b.textContent='J\'écoute';r.onresult=function(e){var x=e.results[0][0].transcript.toLowerCase(),m=x.match(/(\d+[.,]?\d*)\s*(g|grammes?|gr)?\b/);pendQ=m?num(m[1]):null;x=x.replace(/(\d+[.,]?\d*)\s*(g|grammes?|gr)?\b/,'').replace(/\b(de|d'|du|des|la|le|les|un|une)\b/g,' ').replace(/\s+/g,' ').trim();$('#ccq').value=x;search()};r.onend=function(){b.classList.remove('rec');b.textContent='Dicter'};r.onerror=function(){t('Micro indisponible')};r.start()}}
+
+/* ---------- pick & units ---------- */
+function units(f){var o=[['g',f.n.indexOf('(ml)')>-1?'ml':'g',1]];if(f.u)o.push(['u',f.rec?'part(s) de '+r0(f.u)+' g':'portion(s) de '+r1(f.u)+' g',f.u]);o.push(['cs','c. à soupe (15 g)',15],['cc','c. à café (5 g)',5],['bol','bol (250 g)',250]);return o}
+function pick(f){sel=f;$('#ccpick').style.display='block';$('#ccname').textContent=f.n;$('#ccinfo').textContent=fr(f.k)+' kcal / 100 · P '+f.p+' · G '+f.g+' · L '+f.l;
+var u=$('#ccunit');u.innerHTML='';units(f).forEach(function(x){var o=document.createElement('option');o.value=x[0];o.textContent=x[1];o.dataset.g=x[2];u.appendChild(o)});u.value=f.u?'u':'g';
+$('#ccgr').value=pendQ?pendQ:(f.u?1:'');if(pendQ){u.value='g'}pendQ=null;$('#ccfav').textContent=FV.indexOf(f.n)>-1?'★ Favori':'☆ Favori';prev();
+$('#ccpick').scrollIntoView({block:'nearest'});setTimeout(function(){$('#ccgr').focus()},150)}
+function grams(){var q=num($('#ccgr').value),o=$('#ccunit').selectedOptions[0];return q>0&&o?q*(+o.dataset.g):0}
+function prev(){if(!sel)return;var gr=grams(),m=gr/100;$('#k2prev').textContent=gr?r0(gr)+' g = '+fr(sel.k*m)+' kcal · P '+r1(sel.p*m)+' g · G '+r1(sel.g*m)+' g · L '+r1(sel.l*m)+' g':'Indique une quantité'}
+$('#ccgr').oninput=prev;$('#ccunit').onchange=prev;
+$('#k2cancel').onclick=function(){$('#ccpick').style.display='none';sel=null};
+function addEntry(f,gr,label,mi){var m=gr/100,k=key(off);(J[k]=J[k]||[]).push({id:Date.now()+Math.random(),m:mi==null?meal:mi,n:f.n,q:label,gr:gr,k:f.k*m,p:f.p*m,g:f.g*m,l:f.l*m,b:{k:f.k,p:f.p,g:f.g,l:f.l}});
+var i=RC.indexOf(f.n);if(i>-1)RC.splice(i,1);RC.unshift(f.n);RC=RC.slice(0,20);s('recent',RC);s('journal',J)}
+$('#ccadd').onclick=function(){if(!sel)return;var gr=grams();if(!gr){t('Indique une quantité');return}var o=$('#ccunit').selectedOptions[0],q=num($('#ccgr').value);
+addEntry(sel,gr,o.value=='g'?r0(gr)+(o.textContent=='ml'?' ml':' g'):q+' '+o.textContent.replace(/ \(.*\)/,'')+' ('+r0(gr)+' g)');$('#ccpick').style.display='none';sel=null;$('#ccq').value='';search();t('Ajouté à « '+MN[meal]+' »');draw()};
+$('#ccfav').onclick=function(){if(!sel)return;var i=FV.indexOf(sel.n);if(i>-1)FV.splice(i,1);else FV.unshift(sel.n);s('fav',FV);$('#ccfav').textContent=FV.indexOf(sel.n)>-1?'★ Favori':'☆ Favori'};
+
+/* ---------- create food ---------- */
+$('#cnadd').onclick=function(){var n=$('#cnn').value.trim(),k=num($('#cnk').value);if(!n||isNaN(k)){t('Nom et calories obligatoires');return}function v(i){return num($(i).value)||0}
+var f={n:n,k:k,p:v('#cnp'),g:v('#cng'),l:v('#cnl'),u:v('#cnu'),b:'Mon aliment'};var e=findF(n);if(e&&C.indexOf(e)>-1)C.splice(C.indexOf(e),1);C.unshift(f);s('custom',C);['#cnn','#cnk','#cnp','#cng','#cnl','#cnu'].forEach(function(i){$(i).value=''});t('Aliment enregistré');pick(f)};
+
+/* ---------- barcode ---------- */
+function byCode(c){c=String(c).replace(/\D/g,'');if(c.length<8){t('Code-barres incomplet');return}t('Recherche du produit…');
+fetch('https://world.openfoodfacts.org/api/v2/product/'+c+'.json?fields=code,product_name,product_name_fr,brands,nutriments,serving_quantity').then(function(r){return r.json()}).then(function(d){var f=d.product&&offF(d.product);if(!f){t('Produit introuvable : crée-le ou lis son étiquette');$$('#k2tabs button')[4].click();return}f.code=c;pick(keep(f))}).catch(function(){t('Pas de connexion internet')})}
+$('#ccbarb').onclick=function(){byCode($('#ccbar').value)};
+var stream=null,zx=null,loop=null;
+function lib(src,test){return new Promise(function(res,rej){if(test())return res();var sc=document.createElement('script');sc.src=src;sc.onload=function(){res()};sc.onerror=rej;document.head.appendChild(sc)})}
+function zxing(){return lib('https://cdn.jsdelivr.net/npm/@zxing/library@0.21.3/umd/index.min.js',function(){return window.ZXing})}
+function camStop(){if(loop){clearTimeout(loop);loop=null}if(zx){try{zx.reset()}catch(e){}zx=null}if(stream){stream.getTracks().forEach(function(x){x.stop()});stream=null}$('#k2vidbox').style.display='none'}
+function found(c){camStop();if(navigator.vibrate)navigator.vibrate(60);$('#ccbar').value=c;byCode(c)}
+$('#k2camstop').onclick=camStop;
+$('#k2cam').onclick=function(){var v=$('#k2vid');$('#k2vidbox').style.display='block';
+if('BarcodeDetector' in window){navigator.mediaDevices.getUserMedia({video:{facingMode:'environment'}}).then(function(st){stream=st;v.srcObject=st;v.play();var det=new BarcodeDetector({formats:['ean_13','ean_8','upc_a','upc_e']});(function scan(){det.detect(v).then(function(r){if(r.length)found(r[0].rawValue);else loop=setTimeout(scan,250)}).catch(function(){loop=setTimeout(scan,400)})})()}).catch(function(){camStop();t('Autorise la caméra dans les réglages')});return}
+zxing().then(function(){zx=new ZXing.BrowserMultiFormatReader();zx.decodeFromConstraints({video:{facingMode:'environment'}},v,function(r){if(r)found(r.getText())}).catch(function(){camStop();t('Autorise la caméra dans les réglages')})}).catch(function(){camStop();t('Pas de connexion internet')})};
+$('#k2barimg').onchange=function(){var f=this.files[0];this.value='';if(!f)return;var u=URL.createObjectURL(f);t('Lecture du code-barres…');
+function viaZ(){zxing().then(function(){return new ZXing.BrowserMultiFormatReader().decodeFromImageUrl(u)}).then(function(r){found(r.getText())}).catch(function(){t('Code-barres illisible : rapproche-toi et évite les reflets')})}
+if('BarcodeDetector' in window){createImageBitmap(f).then(function(b){return new BarcodeDetector().detect(b)}).then(function(r){if(r.length)found(r[0].rawValue);else viaZ()}).catch(viaZ)}else viaZ()};
+
+/* ---------- photos ---------- */
+$('#k2plate').onchange=function(){var f=this.files[0];this.value='';if(!f)return;shrink(f,900).then(function(d){var k=key(off),id=k+'|'+meal+'|'+Date.now(),m=meta(k);m.ph=m.ph||[];m.ph.push({id:id,m:meal});saveM();return pPut(id,d)}).then(function(){t('Photo ajoutée à « '+MN[meal]+' »');draw();$$('#k2tabs button')[3].click()}).catch(function(){t('Photo impossible à enregistrer')})};
+function parseLabel(tx){var x=norm(tx).replace(/[|]/g,' ').replace(/(\d) ?[,.] ?(\d)/g,'$1.$2'),o={};
+var kc=x.match(/(\d{2,4}(?:\.\d)?)\s*k\s*c\s*a\s*l/);if(kc)o.k=+kc[1];else{var kj=x.match(/(\d{3,4}(?:\.\d)?)\s*kj/);if(kj)o.k=r0(kj[1]/4.184)}
+function f(re){var m=x.match(re);return m?+m[1]:null}
+o.l=f(/(?:matieres? grasses|lipides|graisses)[^\d]{0,25}(\d{1,3}(?:\.\d+)?)/);o.g=f(/glucides[^\d]{0,25}(\d{1,3}(?:\.\d+)?)/);o.p=f(/proteines?[^\d]{0,25}(\d{1,3}(?:\.\d+)?)/);return o}
+$('#k2label').onchange=function(){var f=this.files[0];this.value='';if(!f)return;var st=$('#k2ocrst');st.textContent='Préparation de la lecture… (la première fois peut prendre un peu de temps)';
+lib('https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js',function(){return window.Tesseract}).then(function(){return shrink(f,1600)}).then(function(d){return Tesseract.recognize(d,'fra',{logger:function(m){if(m.status=='recognizing text')st.textContent='Lecture de l\'étiquette : '+r0(m.progress*100)+' %'}})}).then(function(r){var o=parseLabel(r.data.text);
+var ok=['k','p','g','l'].filter(function(k){return o[k]!=null}).length;$$('#k2tabs button')[4].click();if(o.k!=null)$('#cnk').value=o.k;if(o.p!=null)$('#cnp').value=o.p;if(o.g!=null)$('#cng').value=o.g;if(o.l!=null)$('#cnl').value=o.l;$('#cnn').focus();
+st.textContent='';t(ok>=3?'Étiquette lue : vérifie les chiffres et donne-lui un nom':ok?'Lu en partie : complète les cases vides':'Étiquette illisible : reprends-la bien à plat, sans reflet')}).catch(function(){st.textContent='';t('Pas de connexion internet pour lire l\'étiquette')})};
+
+/* ---------- quick plate (hand portions) ---------- */
+var PQ=[['PROTÉINE · 1 main = la paume',[['Blanc de poulet cuit',120,{k:150,p:31,g:0,l:2.5}],['Steak haché 5 % cuit',100,{k:155,p:26,g:0,l:6}],['Poisson blanc cuit',130,{k:100,p:22,g:0,l:1}],['Saumon cuit',110,{k:205,p:22,g:0,l:13}],['Œufs (2)',120,{k:145,p:12.5,g:0.7,l:10}],['Tofu',120,{k:120,p:12,g:2,l:7}],['Crevettes',120,{k:95,p:21,g:0,l:1}]]],
+['FÉCULENT · 1 main = le poing',[['Riz cuit',150,{k:130,p:2.7,g:28,l:0.3}],['Pâtes cuites',150,{k:150,p:5,g:30,l:0.9}],['Pommes de terre cuites',170,{k:80,p:2,g:17,l:0.1}],['Patate douce cuite',150,{k:90,p:1.6,g:20,l:0.1}],['Quinoa cuit',150,{k:120,p:4.4,g:21,l:1.9}],['Lentilles cuites',150,{k:115,p:9,g:17,l:0.4}],['Pain complet',40,{k:240,p:9,g:43,l:3}]]],
+['LÉGUMES · 1 main = le poing',[['Légumes verts cuits',100,{k:28,p:2,g:4,l:0.3}],['Crudités',100,{k:20,p:1,g:3,l:0.2}],['Ratatouille',120,{k:60,p:1.2,g:6,l:3.5}]]],
+['MATIÈRE GRASSE · 1 = le pouce',[['Huile d\'olive',10,{k:900,p:0,g:0,l:100}],['Beurre',10,{k:740,p:0.7,g:0.6,l:82}],['Avocat',40,{k:160,p:2,g:2,l:15}],['Fromage râpé',15,{k:380,p:28,g:0,l:30}],['Sauce crème',30,{k:300,p:2,g:4,l:30}]]]];
+var PS=PQ.map(function(){return[0,0]});
+function plateUI(){var c=$('#k2plateq');c.innerHTML='';PQ.forEach(function(cat,ci){var d=document.createElement('div');d.className='k2pq';var o='<label>'+cat[0]+'</label><select class="ccin" data-c="'+ci+'">'+cat[1].map(function(x,i){return'<option value="'+i+'">'+esc(x[0])+'</option>'}).join('')+'</select><div class="k2hand" data-c="'+ci+'">'+[0,0.5,1,1.5,2].map(function(h){return'<button data-h="'+h+'">'+(h?String(h).replace('.',','):'0')+'</button>'}).join('')+'</div>';d.innerHTML=o;c.appendChild(d)});
+$$('#k2plateq select').forEach(function(se){se.value=PS[se.dataset.c][0];se.onchange=function(){PS[se.dataset.c][0]=+se.value}});
+$$('#k2plateq .k2hand').forEach(function(h){var ci=+h.dataset.c;h.querySelectorAll('button').forEach(function(b){b.classList.toggle('on',+b.dataset.h==PS[ci][1]);b.onclick=function(){PS[ci][1]=+b.dataset.h;plateUI()}})})}
+$('#k2plateadd').onclick=function(){var n=0;PQ.forEach(function(cat,ci){var h=PS[ci][1];if(!h)return;var x=cat[1][PS[ci][0]],gr=x[1]*h,f={n:x[0],k:x[2].k,p:x[2].p,g:x[2].g,l:x[2].l};addEntry(f,gr,String(h).replace('.',',')+' main(s) · ≈ '+r0(gr)+' g');n++});if(!n){t('Choisis au moins une portion');return}PS=PQ.map(function(){return[0,0]});plateUI();t('Assiette ajoutée à « '+MN[meal]+' »');draw()};
+
+/* ---------- journal ---------- */
+function editE(k,e){if(!e.b){var f0=findF(e.n);if(f0&&f0.k>0){e.b={k:f0.k,p:f0.p,g:f0.g,l:f0.l};e.gr=e.k/f0.k*100}}var v=prompt('Nouvelle quantité en grammes pour « '+e.n+' »',r0(e.gr||0));if(v==null)return;var gr=num(v);if(!(gr>0)||!e.b){t('Quantité invalide');return}var m=gr/100;e.gr=gr;e.q=r0(gr)+' g';e.k=e.b.k*m;e.p=e.b.p*m;e.g=e.b.g*m;e.l=e.b.l*m;s('journal',J);draw()}
+function journal(){var k=key(off),E=J[k]||[],ph=(meta(k).ph||[]),h='<h3>Mon journal</h3>';
+MN.forEach(function(n,mi){var it=[],sm={k:0,p:0};E.forEach(function(e,i){if(e.m==mi){it.push([e,i]);sm.k+=e.k;sm.p+=e.p}});var pm=ph.filter(function(p){return p.m==mi});if(mi==4&&!it.length&&!pm.length)return;
+var badge=(mi==2||mi==4)?'':(it.length?(sm.p>=20?'<em class="ok">'+r0(sm.p)+' g prot.</em>':'<em class="lo">'+r0(sm.p)+' g prot. · vise 20</em>'):'');
+h+='<div class="ccm"><h4><span style="color:var(--plum)">'+n+badge+'</span><span>'+fr(sm.k)+' kcal</span></h4>';
+if(pm.length)h+='<div class="k2th">'+pm.map(function(p){return'<img alt="Photo du repas" data-ph="'+p.id+'">'}).join('')+'</div>';
+if(!it.length)h+='<div class="cce"><span>Rien pour le moment</span></div>';
+it.forEach(function(a){h+='<div class="cce"><div data-e="'+a[1]+'">'+esc(a[0].n)+' · '+esc(a[0].q)+'</div><div><span>'+fr(a[0].k)+' kcal</span><button data-d="'+a[1]+'" aria-label="Supprimer">×</button></div></div>'});
+h+='<div class="k2ma"><button data-a="add" data-m="'+mi+'">+ Ajouter</button><button data-a="copy" data-m="'+mi+'">Copier d\'hier</button>'+(it.length?'<button data-a="save" data-m="'+mi+'">Repas type</button><button data-a="rec" data-m="'+mi+'">Recette</button><button data-a="tom" data-m="'+mi+'">Refaire demain</button>':'')+'</div></div>'});
+var c=$('#ccdays');c.innerHTML=h;
+c.querySelectorAll('[data-d]').forEach(function(b){b.onclick=function(){J[k].splice(+b.dataset.d,1);s('journal',J);draw()}});
+c.querySelectorAll('[data-e]').forEach(function(b){b.onclick=function(){editE(k,J[k][+b.dataset.e])}});
+c.querySelectorAll('img[data-ph]').forEach(function(im){pGet(im.dataset.ph).then(function(d){if(d)im.src=d});im.onclick=function(){if(!im.src)return;var z=document.createElement('div');z.className='k2zoom';z.innerHTML='<img alt="Photo" src="'+im.src+'"><button class="swap">Supprimer la photo</button>';z.onclick=function(ev){if(ev.target.tagName=='BUTTON'){var m=meta(k);m.ph=m.ph.filter(function(p){return p.id!=im.dataset.ph});saveM();pDel(im.dataset.ph);draw()}z.remove()};document.body.appendChild(z)}});
+c.querySelectorAll('[data-a]').forEach(function(b){b.onclick=function(){var mi=+b.dataset.m,a=b.dataset.a,items=(J[k]||[]).filter(function(e){return e.m==mi});
+if(a=='add'){meal=mi;meals();$$('#k2tabs button')[0].click();$('#ccq').focus();$('#ccmeal').scrollIntoView({block:'center'});return}
+if(a=='copy'){var y=key(off-1),src=(J[y]||[]).filter(function(e){return e.m==mi});if(!src.length){t('Rien à copier pour hier');return}J[k]=J[k]||[];src.forEach(function(e){var c2=JSON.parse(JSON.stringify(e));c2.id=Date.now()+Math.random();J[k].push(c2)});s('journal',J);t('Copié');draw();return}
+if(a=='tom'){var tk=key(off+1);J[tk]=J[tk]||[];items.forEach(function(e){var c2=JSON.parse(JSON.stringify(e));c2.id=Date.now()+Math.random();J[tk].push(c2)});s('journal',J);t('Prêt pour demain');return}
+if(a=='save'){var n=prompt('Nom de ce repas type',MN[mi]+' habituel');if(!n)return;SM.unshift({n:n,it:JSON.parse(JSON.stringify(items))});s('meals',SM);t('Repas type enregistré');return}
+if(a=='rec'){var n2=prompt('Nom de ta recette (ex. Muesli maison, Gratin…)');if(!n2)return;var pr=num(prompt('Pour combien de portions ?','1'))||1,T={k:0,p:0,g:0,l:0,gr:0};items.forEach(function(e){T.k+=e.k;T.p+=e.p;T.g+=e.g;T.l+=e.l;T.gr+=e.gr||0});if(!T.gr){t('Quantités manquantes');return}
+var f={n:n2,k:r0(T.k/T.gr*100),p:r1(T.p/T.gr*100),g:r1(T.g/T.gr*100),l:r1(T.l/T.gr*100),u:r0(T.gr/pr),rec:pr,b:'Ma recette'};C.unshift(f);s('custom',C);t('Recette enregistrée : '+fr(T.k/pr)+' kcal la part')}}})}
+
+/* ---------- coach ---------- */
+var SUG=[['Skyr nature',150],['Whey (dose 30 g)',30],['Blanc de poulet cru',120],['Petit-suisse nature 0 % (pièce 60 g)',120],['Thon au naturel égoutté',100],['Fromage blanc 0 %',200],['Œuf entier (pièce 60 g)',120],['Blanc de dinde cru',120],['Crevettes cuites',120],['Blanc de dinde cru',120],['Cabillaud cru',150],['Edamame',100]];
+function coach(){var k=key(off),T=tot(k),G=macT(goalOf(off)),left=G.k-T.k,lp=G.p-T.p,c=$('#k2coach'),h='<h3>Ce qu\'il te reste</h3>';
+if(!(J[k]||[]).length){c.innerHTML=h+'<p class="k2help">Dès ton premier repas noté, je te dis ici ce qu\'il te reste et quoi manger pour boucler ta journée.</p>';return}
+h+='<p style="font-size:14px;margin:0">'+(left>=0?'<b>'+fr(left)+' kcal</b>':'<b>'+fr(-left)+' kcal en plus, très bien</b>')+' · protéines '+(lp>0?'encore <b>'+r0(lp)+' g</b>':'<b>objectif atteint</b>')+' · glucides '+r0(Math.max(G.g-T.g,0))+' g · lipides '+r0(Math.max(G.l-T.l,0))+' g</p>';
+if(lp>12&&left>60){var opts=SUG.map(function(x){var f=findF(x[0]);if(!f)return null;var m=x[1]/100;return{f:f,gr:x[1],k:f.k*m,p:f.p*m}}).filter(function(o){return o&&o.k<=left+40}).sort(function(a,b){return b.p/b.k-a.p/a.k}).slice(0,3);
+if(opts.length){h+='<p class="k2help" style="margin-top:10px">Pour atteindre tes protéines, je te propose :</p><div class="k2sug">'+opts.map(function(o,i){return'<div class="ccit" data-s="'+i+'"><b>'+esc(o.f.n)+' · '+o.gr+' g</b><span>+'+r0(o.p)+' g prot. · '+fr(o.k)+' kcal</span></div>'}).join('')+'</div>';c.innerHTML=h;c.querySelectorAll('[data-s]').forEach(function(d){d.onclick=function(){var o=opts[+d.dataset.s];pick(o.f);$('#ccunit').value='g';$('#ccgr').value=o.gr;prev()}});return}}
+if(left<0)h+='<p class="k2help" style="margin-top:8px">Étape atteinte : bravo, ton corps a reçu de quoi construire.</p>';
+else if(lp<=0)h+='<p class="k2help" style="margin-top:8px">Protéines bouclées : ton muscle est protégé aujourd\'hui.</p>';
+c.innerHTML=h}
+
+/* ---------- water / feelings ---------- */
+function water(){var k=key(off),m=meta(k),n=m.w||0,c=$('#k2glasses');c.innerHTML='';for(var i=1;i<=10;i++)(function(i){var b=document.createElement('button');b.setAttribute('aria-label',i+' verre(s)');if(i<=n)b.className='on';b.onclick=function(){m.w=(m.w==i?i-1:i);saveM();water();if(m.w==8)t('2 L atteints')};c.appendChild(b)})(i);$('#k2wt').textContent=(n*0.25).toLocaleString('fr-FR')+' L sur 2 L'}
+function segv(id,f){var k=key(off),m=meta(k);$$('#'+id+' button').forEach(function(b){b.classList.toggle('on',m[f]!=null&&+b.dataset.v==m[f]);b.onclick=function(){m[f]=(m[f]==+b.dataset.v?null:+b.dataset.v);saveM();feel()}})}
+function feel(){var k=key(off),m=meta(k);segv('k2belly','v');segv('k2energy','e');segv('k2hunger','h');$('#k2steps').value=m.st||'';$('#k2sleep').value=m.sl||'';$('#k2note').value=m.no||''}
+$('#k2steps').onchange=function(){meta(key(off)).st=num(this.value)||null;saveM()};
+$('#k2sleep').onchange=function(){meta(key(off)).sl=num(this.value)||null;saveM()};
+$('#k2note').onchange=function(){meta(key(off)).no=this.value.trim();saveM()};
+
+/* ---------- bilan ---------- */
+$$('#k2per button').forEach(function(b){b.onclick=function(){per=+b.dataset.v;$$('#k2per button').forEach(function(o){o.classList.toggle('on',o==b)});bilan()}});
+function stats(n){var o={d:0,k:0,p:0,ph:0,w:0,wn:0,ok:0,v:[],st:0,stn:0};for(var i=-(n-1);i<=0;i++){var dk=key(off+i),T=tot(dk),m=M[dk]||{};if(T.k>0){o.d++;o.k+=T.k;o.p+=T.p;if(T.p>=80)o.ph++;var gl=goalOf(off+i);if(Math.abs(T.k-gl)<=gl*0.1)o.ok++}if(m.w){o.w+=m.w;o.wn++}if(m.v!=null)o.v.push(m.v);if(m.st){o.st+=m.st;o.stn++}}return o}
+function streak(){var n=0;for(var i=0;i>-400;i--){if((J[key(i)]||[]).length)n++;else if(i<0)break}return n}
+function bilan(){var w=$('#ccweek'),gl=goalOf(off),mx=gl*1.35;w.className='ccweek'+(per==30?' m30':'');w.innerHTML='';
+for(var i=-(per-1);i<=0;i++){var dk=key(off+i),v=tot(dk).k,dd=dOf(off+i),gi=goalOf(off+i),el=document.createElement('div');el.innerHTML='<i class="'+(v>gi*1.1?'over':'')+'" style="height:'+Math.min(v/mx*100,100)+'%"></i>'+dd.toLocaleDateString('fr-FR',{weekday:'short'}).slice(0,3);w.appendChild(el)}
+var gline=document.createElement('span');gline.className='k2gl';gline.style.bottom=(gl/mx*140*(per==30?1:0.86)+(per==30?4:19))+'px';w.appendChild(gline);
+var o=stats(per);$('#k2stats').innerHTML='<div><b>'+o.d+'/'+per+'</b><span>jours notés</span></div><div><b>'+(o.d?fr(o.k/o.d):'·')+'</b><span>kcal en moyenne</span></div><div><b>'+(o.d?r0(o.p/o.d)+' g':'·')+'</b><span>protéines en moyenne</span></div><div><b>'+streak()+'</b><span>jour(s) d\'affilée</span></div>';
+$('#ccavg').innerHTML=o.d?'Objectif du moment : <b>'+fr(gl)+' kcal</b>. Jours dans ta cible (à 10 % près) : <b>'+o.ok+'</b>. Jours à 80 g de protéines ou plus : <b>'+o.ph+'</b>.'+(o.wn?' Eau : <b>'+(o.w/o.wn*0.25).toLocaleString('fr-FR',{maximumFractionDigits:1})+' L</b> par jour.':''):'Commence à noter tes repas pour voir ton bilan.';
+var g2=$('#k2gal');g2.innerHTML='';var ids=[];for(var j=-(per-1);j<=0;j++)(((M[key(off+j)]||{}).ph)||[]).forEach(function(p){ids.push(p.id)});
+if(ids.length){g2.innerHTML='<p class="k2help" style="margin-top:12px">Mes assiettes de la période</p><div class="k2th"></div>';var box=g2.querySelector('.k2th');ids.slice(-24).forEach(function(id){var im=document.createElement('img');im.alt='Assiette';box.appendChild(im);pGet(id).then(function(d){if(d){im.src=d;im.onclick=function(){zoom(d)}}else im.remove()})})}}
+$('#k2share').onclick=function(){var o=stats(7),gl=goalOf(off),last=W[W.length-1],bl=['plat','un peu gonflé','gonflé','très gonflé'],vm=o.v.length?bl[r0(o.v.reduce(function(a,b){return a+b},0)/o.v.length)]:null;
+var tx='Bilan de Caly · 7 derniers jours\nJours notés : '+o.d+'/7\nMoyenne : '+(o.d?fr(o.k/o.d):'·')+' kcal (objectif '+fr(gl)+')\nProtéines : '+(o.d?r0(o.p/o.d):'·')+' g en moyenne (objectif 90 g), 80 g atteints '+o.ph+' jour(s)\n'+(o.wn?'Eau : '+(o.w/o.wn*0.25).toLocaleString('fr-FR',{maximumFractionDigits:1})+' L par jour\n':'')+(o.stn?'Pas : '+fr(o.st/o.stn)+' par jour\n':'')+(vm?'Ventre : plutôt '+vm+'\n':'')+(last?'Dernière mesure : '+String(last.kg||'·').replace('.',',')+' kg'+(last.tt?' · '+String(last.tt).replace('.',',')+' cm de tour de taille':'')+' ('+last.d.split('-').reverse().join('/')+')\n':'');
+var notes=[];for(var i=-6;i<=0;i++){var m=M[key(off+i)];if(m&&m.no)notes.push('· '+m.no)}if(notes.length)tx+='Mes notes :\n'+notes.join('\n');
+if(navigator.share)navigator.share({text:tx}).catch(function(){});else{window.open('https://wa.me/?text='+encodeURIComponent(tx),'_blank')}};
+
+/* ---------- weight ---------- */
+$('#k2wadd').onclick=function(){var kg=num($('#k2kg').value),tt=num($('#k2tt').value);if(!(kg>0)&&!(tt>0)){t('Indique ton poids ou ton tour de taille');return}var d=key(0);W=W.filter(function(x){return x.d!=d});W.push({d:d,kg:kg>0?kg:null,tt:tt>0?tt:null});W.sort(function(a,b){return a.d<b.d?-1:1});s('weights',W);$('#k2kg').value='';$('#k2tt').value='';t('Mesure notée');wchart()};
+function wchart(){var c=$('#k2wchart');if(!W.length){c.innerHTML='<p class="k2wl">Point de départ Tanita : 48,1 kg. Note ta mesure une fois par semaine pour voir ta courbe.</p>';return}
+var pts=[{d:'2026-11-04',kg:48.1}].concat(W.filter(function(x){return x.kg}));var mn=Math.min.apply(null,pts.map(function(p){return p.kg}))-0.5,mxv=Math.max.apply(null,pts.map(function(p){return p.kg}))+0.5,Wd=320,H=120;
+function X(i){return pts.length==1?Wd/2:12+i*(Wd-24)/(pts.length-1)}function Y(v){return H-10-(v-mn)/(mxv-mn)*(H-20)}
+var path=pts.map(function(p,i){return(i?'L':'M')+X(i).toFixed(1)+' '+Y(p.kg).toFixed(1)}).join(' ');
+var svg='<svg viewBox="0 0 '+Wd+' '+H+'" style="width:100%;height:auto;margin-top:12px"><path d="'+path+'" fill="none" style="stroke:var(--wine)" stroke-width="2.5" stroke-linejoin="round"/>'+pts.map(function(p,i){return'<circle cx="'+X(i)+'" cy="'+Y(p.kg)+'" r="3.5" style="fill:var(--plum)"/>'}).join('')+'</svg>';
+var l=W[W.length-1],first=W.filter(function(x){return x.tt})[0],lt=W.filter(function(x){return x.tt}).slice(-1)[0];
+var tx='Dernière mesure ('+l.d.split('-').reverse().join('/')+') : '+(l.kg?String(l.kg).replace('.',',')+' kg, soit '+(l.kg-48.1>0?'+':'')+String(r1(l.kg-48.1)).replace('.',',').replace('-','−')+' kg depuis le départ':'')+(l.tt?(l.kg?' · ':'')+String(l.tt).replace('.',',')+' cm de taille':'')+'.';
+if(first&&lt&&first!==lt)tx+=' Tour de taille : '+(lt.tt-first.tt>0?'+':'')+String(r1(lt.tt-first.tt)).replace('.',',').replace('-','−')+' cm.';
+c.innerHTML=svg+'<p class="k2wl">'+tx+' <button class="swap" id="k2wdel" style="padding:4px 10px">Effacer la dernière</button></p>';$('#k2wdel').onclick=function(){W.pop();s('weights',W);wchart()}}
+
+/* ---------- backup ---------- */
+$('#ccexp').onclick=function(){var data={},i,n;for(i=0;i<localStorage.length;i++){n=localStorage.key(i);if(n.indexOf('bf_caly_')==0)data[n]=localStorage.getItem(n)}
+pAll().catch(function(){return{}}).then(function(ph){data.__photos=ph;var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(data)],{type:'application/json'}));a.download='sauvegarde-caly-'+key(0)+'.json';document.body.appendChild(a);a.click();a.remove();t('Sauvegarde téléchargée')})};
+$('#ccimp').onchange=function(){var f=this.files[0];if(!f)return;var r=new FileReader();r.onload=function(){try{var d=JSON.parse(r.result),ph=d.__photos||{};delete d.__photos;Object.keys(d).forEach(function(k){localStorage.setItem(k,d[k])});Promise.all(Object.keys(ph).map(function(k){return pPut(k,ph[k])})).catch(function(){}).then(function(){t('Sauvegarde importée');setTimeout(function(){location.reload()},900)})}catch(e){t('Fichier illisible')}};r.readAsText(f)};
+$('#k2csv').onclick=function(){var L=[['Date','Repas','Aliment','Quantité','kcal','Protéines','Glucides','Lipides']];Object.keys(J).sort().forEach(function(d){J[d].forEach(function(e){L.push([d,MN[e.m],e.n,e.q,r0(e.k),r1(e.p),r1(e.g),r1(e.l)])})});
+var csv='\ufeff'+L.map(function(r){return r.map(function(x){x=String(x).replace(/"/g,'""');return/[;"\n]/.test(x)?'"'+x+'"':x}).join(';')}).join('\n');var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download='journal-caly-'+key(0)+'.csv';document.body.appendChild(a);a.click();a.remove();t('Tableau téléchargé')};
+
+/* ---------- draw ---------- */
+function draw(){var k=key(off),T=tot(k),gl=goalOf(off),G=macT(gl),d=dOf(off);
+$('#ccdate').textContent=off==0?"Aujourd'hui":off==-1?'Hier':d.toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long'});$('#ccpickdate').value=k;
+var left=gl-T.k,pc=Math.min(T.k/gl,1);$('#cceat').textContent=fr(T.k);$('#ccleft').textContent=left>=0?fr(left)+' kcal restantes':fr(-left)+' kcal en plus';
+var ring=$('#ccring');ring.style.strokeDashoffset=326.7*(1-pc);ring.style.stroke=left<0?'#c0392b':'';
+[['p',T.p,G.p],['g',T.g,G.g],['l',T.l,G.l]].forEach(function(a){$('#cc'+a[0]).textContent=r0(a[1])+' / '+a[2]+' g';$('#cc'+a[0]+'f').style.width=Math.min(a[1]/a[2]*100,100)+'%'});
+$('#k2pal').textContent=goalMode=='auto'?palier(off)[1]+' · '+fr(gl)+' kcal · '+G.p+' g P · '+G.g+' g G · '+G.l+' g L':'Objectif choisi : '+fr(gl)+' kcal · '+G.p+' g P · '+G.g+' g G · '+G.l+' g L';
+water();journal();coach();feel();bilan()}
+meals();listChip();plateUI();wchart();draw();
+})();
+
+</script>
+</body>
+</html>
